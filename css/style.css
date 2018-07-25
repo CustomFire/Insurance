@@ -7,7 +7,7 @@
 }
 
 .navbar-custom {
-  background-color: blue;
+  background-color: mediumblue;
 }
 
 .navbar-brand {
@@ -29,7 +29,7 @@
 }
 
 .choose-part {
-  background-color: skyblue;
+  background-color: royalblue;
 }
 
 .choose-title {
@@ -63,10 +63,19 @@
   vertical-align: middle;
 }
 
-.footer-content > ul {
+.why-many {
+  background-color: gainsboro;
+}
+
+.footer {
+  background-color: silver;
+}
+
+.footer-content ul {
   list-style: none;
 }
 
-.footer-content > ul li {
+.footer-content ul li {
   float: left;
+  width: 33.33333333%;
 }
