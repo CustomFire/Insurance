@@ -1,0 +1,12 @@
+.footer {
+  background-color: silver;
+}
+
+.footer-content ul {
+  list-style: none;
+}
+
+.footer-content ul li {
+  float: left;
+  width: 33.33333333%;
+}

@@ -1,0 +1,45 @@
+.payment {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.payment-form {
+  border: 1px solid black;
+}
+
+.before-travel {
+  background-color: #ededed;
+}
+
+.travel-title {
+  text-align: center;
+}
+
+.step2-title {
+  text-align: center;
+}
+
+.company-card {
+  background-color: #ededed;
+}
+
+.company-card .company-logo, .company-card .company-name, .company-card .company-rate, .company-card .insurance-cost, .company-card .bue-button {
+  display: inline-block;
+}
+
+.company-card .company-rate .checked {
+  color: orange;
+}
+
+.company-card .insurance-cost, .company-card .bue-button {
+  float: right;
+}
+
+.step2-calculation {
+  border-top: 1px solid black;
+  background-color: #ededed;
+}
+
+.calculate-button {
+  text-align: right;
+}
