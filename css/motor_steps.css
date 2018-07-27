@@ -84,3 +84,19 @@
 .customer-info .form-group label {
   text-align: left;
 }
+
+.order-card {
+  background-color: #ededed;
+}
+
+.modal-button-succes, .modal-button-back {
+  display: inline-block;
+}
+
+.modal-button-succes {
+  float: right;
+}
+
+.modal-card {
+  background-color: #ededed;
+}
