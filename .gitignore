@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 /node_modules
 node_modules/*
 /node_modules/*
+=======
+Insurance/node_modules
+node_modules
+>>>>>>> 38c3b0c0b7ac34483330b8c66404005bf5e92c0f
