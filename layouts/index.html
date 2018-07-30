@@ -9,11 +9,26 @@
     <link rel="stylesheet" href="../css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Insurance</title>
+    <title>Insurance-UA</title>
 </head>
 <body>
     <div class="header">
-        <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <!--HAMBURGER-->
+            <!-- <nav class="menu">
+                <div class="menu-container">
+                    <ul class="menu-list">
+                    <li class="menu-item"><a href="" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">About</a></li>
+                    </ul>
+                </div>
+                
+                <a class="menu-toggle">
+                    <div class="menu-hamburger"></div>
+                </a>
+            </nav> -->
+            <!--HAMBURGER-->
+        <!-- <div class="navbar navbar-default navbar-static-top" role="navigation">
             <div class="navbar-custom">
                 <div class="container">
                     <div class="navbar-header">
@@ -40,36 +55,87 @@
                                 </ul>
                             </li>
                         </ul>
-                    </div><!--/.nav-collapse -->
+                    </div>
                 </div>
             </div>
-          </div> 
+        </div> -->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
+                    </div>
+                
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Link</a></li>
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Link</a></li>
+                        <li><a>Eng</a></li>
+                    </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav> 
+        </div>
     </div>
     <div class="main">
-        <div class="choose-part">
+        <div class="choose-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="choose-title">
-                            <h2>Choose your type of Insurance</h2>
+                            <h2><b>Choose your type of Insurance</b></h2>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="choose-cart">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
                                     <div class="choose-item">
-                                        <img src="http://via.placeholder.com/350x300&text=Motor liability">
-                                        <div class="cart-title">
-                                        <h3>Motor liability</h3>
+                                        <div class="card">
+                                            <figure class="front">
+                                                <img src="http://www.jboeijenga.nl/img/front.jpg" alt="front">
+                                                <div class="caption motor">
+                                                    <h2>Motor_<span> Liability</span></h2>
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, quae.</p>
+                                                    <a href="#">View more</a>
+                                                </div>			
+                                            </figure>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="choose-item">
-                                        <img src="http://via.placeholder.com/350x300&text=Travel">
-                                        <div class="cart-title">
-                                        <h3>Travel</h3>
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="choose-item travel">
+                                        <div class="card">
+                                            <figure class="front">
+                                            <img src="http://www.jboeijenga.nl/img/front.jpg" alt="front">
+                                            <div class="caption travel">
+                                                <h2>Travel_<span> Insurance</span></h2>
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, necessitatibus.</p>
+                                                <a href="#">View more</a>
+                                            </div>			
+                                            </figure>
                                         </div>
                                     </div>
                                 </div>
@@ -79,72 +145,93 @@
                 </div>
             </div>
         </div>
-        <div class="how-works">
+        <div class="work-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="works-title">
+                        <div class="work-title">
                             <h2>How it works</h2>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="work-steps">
-                            <div class="col-md-4">
-                                <img src="http://via.placeholder.com/200x200&text=200x200" class="img-circle">
+                    <section id="Steps" class="steps-section">
+                        <h2 class="steps-header">
+                            Responsive Semantic Timeline
+                        </h2>
+                        <div class="steps-timeline">                  
+                            <div class="steps-one">
+                            <img class="steps-img" src="http://placehold.it/50/3498DB/FFFFFF" alt="" />
+                            <h3 class="steps-name">
+                                Semantic
+                            </h3>
+                            <p class="steps-description">
+                                The timeline is created using negative margins and a top border.
+                            </p>
                             </div>
-                            <div class="col-md-4">
-                                <img src="http://via.placeholder.com/200x200&text=200x200" class="img-circle">
+                    
+                            <div class="steps-two">
+                            <img class="steps-img" src="http://placehold.it/50/3498DB/FFFFFF" alt="" />
+                            <h3 class="steps-name">
+                                Relative
+                            </h3>
+                            <p class="steps-description">
+                                All elements are positioned realtive to the parent. No absolute positioning.
+                            </p>
                             </div>
-                            <div class="col-md-4">
-                                <img src="http://via.placeholder.com/200x200&text=200x200" class="img-circle">
-                            </div>
-                        </div>
-                    </div>
+                    
+                            <div class="steps-three">
+                            <img class="steps-img" src="http://placehold.it/50/3498DB/FFFFFF" alt="" />
+                            <h3 class="steps-name">
+                                Contained
+                            </h3>
+                            <p class="steps-description">
+                                The timeline does not extend past the first and last elements.
+                            </p>
+                            </div>          
+                        </div><!-- /.steps-timeline -->
+                    </section>
                     <div class="col-md-12">
-                        <div class="try-service">
-                            <h2>Try our service to check how easy you can bue</h2>
+                        <div class="steps-after">
+                            <h2>Try our service to check how easy you can buy</h2>
                         </div>
                     </div>
-                    <div class="purchaise-button-1">
-                        <div class="col-md-6">
-                            <button type="button" class="btn btn-success btn-lg">Purchaise Motor Library</button>
+                    <div class="col-xs-6 col-md-6">
+                        <div class="purchaise-motor">
+                            <button type="button" class="btn btn-success btn-block">Purchaise Motor Liability</button>
                         </div>
                     </div>
-                    <div class="purchaise-button-2">
-                        <div class="col-md-6">
-                            <button type="button" class="btn btn-success btn-lg">Purchaise Motor Library</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="why">
-            <div class="container">
-                <div class="row">
-                    <div class="why-content">
-                        <div class="col-md-12">
-                            <div class="why-title">
-                                <h2>Why Insurance-ua</h2>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="why-img">
-                                <img src="http://via.placeholder.com/400x300&text=400x300">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="why-text">                            
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt itaque natus aliquam quis, nisi deserunt illum nulla temporibus quae architecto iure sint esse aspernatur facilis debitis repellendus consequatur maxime ut ipsum cumque sed! Atque asperiores qui voluptatibus necessitatibus aliquid deleniti reiciendis cupiditate praesentium eum quibusdam sint iste dolores voluptate excepturi ipsa sed temporibus natus eligendi repellendus, rem, dignissimos illum autem alias eius! Qui commodi ex quam est ea repudiandae magnam velit consectetur, repellat voluptatum. Tempore ut a, quidem neque aut rerum asperiores, quae ipsum adipisci eaque id iure quis illum quibusdam cupiditate! Fugit rerum quibusdam doloremque molestiae officia magni saepe cumque facere, sapiente dolorum? Id corrupti nostrum necessitatibus sint optio! Numquam ducimus saepe, voluptate aliquam voluptatibus illo iure ea facere nulla, repudiandae quo fugit. Earum ipsam quod ipsa, laborum laudantium alias dolore tenetur minus. Distinctio eius iste recusandae doloribus omnis fugit tempora, neque hic nam a corrupti. Ducimus quam possimus consectetur nobis magnam harum, dolore ad architecto enim tempore maiores quisquam quia minus? Rerum ab eaque autem voluptatibus atque qui aspernatur in, culpa illum, delectus magni cumque labore consequatur corporis exercitationem quod. Iure, expedita minima nobis modi consequatur optio. Illo voluptas dolorem odit magnam, hic error illum eius rerum nesciunt!</p>
-                            </div>
+                    <div class="col-xs-6 col-md-6">
+                        <div class="purchaise-travel">
+                            <button type="button" class="btn btn-success btn-block">Purchaise Travel Insurance</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="why-many">
+        <div class="explanation">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-12">
+                        <div class="title">
+                            <h2>Why Insurance-ua</h2>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-md-5">
+                        <div class="why-img">
+                            <img src="http://via.placeholder.com/400x300&text=400x300">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-md-7">
+                        <div class="why-text">                            
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt itaque natus aliquam quis, nisi deserunt illum nulla temporibus quae architecto iure sint esse aspernatur facilis debitis repellendus consequatur maxime ut ipsum cumque sed! Atque asperiores qui voluptatibus necessitatibus aliquid deleniti reiciendis cupiditate praesentium eum quibusdam sint iste dolores voluptate excepturi ipsa sed temporibus natus eligendi repellendus, rem, dignissimos illum autem alias eius! Qui commodi ex quam est ea repudiandae magnam velit consectetur, repellat voluptatum. Tempore ut a, quidem neque aut rerum asperiores, quae ipsum adipisci eaque id iure quis illum quibusdam cupiditate! Fugit rerum quibusdam doloremque molestiae officia magni saepe cumque facere, sapiente dolorum? Id corrupti nostrum necessitatibus sint optio! Numquam ducimus saepe, voluptate aliquam voluptatibus illo iure ea facere nulla, repudiandae quo fugit. Earum ipsam quod ipsa, laborum laudantium alias dolore tenetur minus. Distinctio eius iste recusandae doloribus omnis fugit tempora, neque hic nam a corrupti. Ducimus quam possimus consectetur nobis magnam harum, dolore ad architecto enim tempore maiores quisquam quia minus? Rerum ab eaque autem voluptatibus atque qui aspernatur in, culpa illum, delectus magni cumque labore consequatur corporis exercitationem quod. Iure, expedita minima nobis modi consequatur optio. Illo voluptas dolorem odit magnam, hic error illum eius rerum nesciunt!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="many-explanation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="why-many-title">
                             <h3><b>Why Insurance-ua?</b></h3>
                         </div>
@@ -155,9 +242,9 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, exercitationem.</p>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-xs-12 col-sm-6 col-md-8">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-xs-12 col-sm-12 col-md-6">
                                 <div class="why-many-title">
                                     <h3><b>Why Insurance-ua?</b></h3>
                                 </div>
@@ -168,7 +255,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, exercitationem.</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-xs-12 col-sm-12 col-md-6">
                                 <div class="why-many-title">
                                     <h3><b>Why Insurance-ua?</b></h3>
                                 </div>
@@ -179,7 +266,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, exercitationem.</p>
                                 </div>
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="why-many-img">
@@ -267,7 +354,12 @@
             <div class="footer-copyright">
             </div>
         </div>
-    </div> 
+    </div>
+    <script>
+    $('.menu-toggle').on('click', function(){
+        $('.menu').toggleClass('active');
+    });
+    </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
