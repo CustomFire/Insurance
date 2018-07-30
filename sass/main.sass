@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato')
 @import url('https://fonts.googleapis.com/css?family=Anton|Bree+Serif|Faster+One|Lato|Nunito|Slabo+27px|Spinnaker')
 *
-    font-family: 'Lato', sans-serif
+  font-family: 'Lato', sans-serif
+.main
+  background-color: #99c458
 // .header
 //     font-size: 1.9em
 // .navbar-custom
@@ -99,13 +101,13 @@
 //         bottom: -6px
 
 // .menu.active .menu-hamburger
-    background: transparent
-    &:before
-        transform: rotate(-45deg)
-        top: 0px
-    &:after
-        transform: rotate(45deg)
-        bottom: 0px
+// background: transparent
+// &:before
+//     transform: rotate(-45deg)
+//     top: 0px
+// &:after
+//     transform: rotate(45deg)
+//     bottom: 0px
 //---------------------------------HAMBURGER-MENU---------------------------------
 .navbar-brand
     background-image: url(http://via.placeholder.com/125x50&text=Logo)
@@ -125,9 +127,13 @@
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover
     color: #ffffff
     background-color: green
+
 .choose-section
-    height: 335px
-//cards on main paige
+    height: 345px
+
+.choose-title
+  text-align: center
+//cards on main page
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,800)
 
@@ -140,9 +146,10 @@ body
   background: whitesmoke
 
 figure
-  width: 450px
-  height: 270px
-
+  width: 80%
+  height: auto
+  margin:
+    left: 0px
 
 .card
   position: relative
@@ -154,7 +161,7 @@ figure
   color: #fff
   backface-visibility: hidden
   overflow: hidden
-  position: absolute
+  position: relative
   top: 0
   left: 0
   text-align: center
@@ -275,8 +282,8 @@ figure a
   width: 100%
   height: 100%
 
-//cards on main paige
-//steps section
+//--------------------------------CARDS ON MAIN PAGE--------------------------------
+//-----------------------------------STEPS SECTION----------------------------------
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic)
 
 html
@@ -293,7 +300,7 @@ body
 .section-header, .steps-header, .steps-name
   color: #3498db
   font-weight: 400
-  font-size: 1.4em
+  font-size: 2.5em
 
 .steps-header
   margin-bottom: 20px
@@ -314,8 +321,8 @@ body
 @media screen and (min-width: 500px)
   .steps-timeline
     border-top: 2px solid #3498db
-    padding-top: 20px
-    margin-top: 40px
+    padding-top: 0px
+    margin-top: 75px
     margin-left: 16.65%
     margin-right: 16.65%
 
@@ -353,8 +360,8 @@ body
 .steps-img
   display: block
   margin: auto
-  width: 50px
-  height: 50px
+  width: 150px
+  height: 150px
   border-radius: 50%
 
 @media screen and (max-width: 500px)
@@ -376,7 +383,7 @@ body
 @media screen and (min-width: 500px)
   .steps-description
     text-align: center
-//steps section
+//-----------------------------------STEPS SECTION----------------------------------
 .footer
     background-color: silver
 .footer-content
