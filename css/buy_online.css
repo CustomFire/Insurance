@@ -3,7 +3,7 @@
   font-family: 'Lato', sans-serif;
 }
 
-.travel-card {
+.travel-card, .modal-card {
   background-color: #ededed;
 }
 
@@ -30,11 +30,6 @@
   display: inline-block;
 }
 
-.item {
-  max-height: 500px;
-}
-
-img {
-  height: 100%;
-  width: auto;
+.window {
+  border: 1px solid black;
 }
