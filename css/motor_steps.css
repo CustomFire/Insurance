@@ -19,7 +19,7 @@
   background-color: #ededed;
 }
 
-.company-card .company-logo, .company-card .company-name, .company-card .company-rate, .company-card .insurance-cost, .company-card .bue-button {
+.company-card .company-logo, .company-card .company-name, .company-card .company-rate, .company-card .insurance-cost, .company-card .buy-button {
   display: inline-block;
 }
 
@@ -27,7 +27,7 @@
   color: orange;
 }
 
-.company-card .insurance-cost, .company-card .bue-button {
+.company-card .insurance-cost, .company-card .buy-button {
   float: right;
 }
 
@@ -46,7 +46,6 @@
 
 .step3-form-wrapper {
   border: 1px solid black;
-  padding-left: 10px;
   background-color: #ffffff;
 }
 
@@ -83,10 +82,6 @@
 
 .order-card {
   background-color: #ededed;
-}
-
-.modal-button-succes, .modal-button-back {
-  display: inline-block;
 }
 
 .modal-button-succes {

@@ -35,6 +35,12 @@
 }
 
 img {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
+}
+
+.tab-content {
+  border-bottom: 1px solid silver;
+  border-right: 1px solid silver;
+  border-left: 1px solid silver;
 }
