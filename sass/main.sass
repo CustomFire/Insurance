@@ -3,14 +3,16 @@
 *
   font-family: 'Lato', sans-serif
 
-$hamburger-color: #e1e471c9
-$navbar-color: #B7D65D
-$cards-color: #37A001
+$hamburger-color: #d8e39a
+
+$navbar-color: #d6f58e
+$cards-color: #82b21e
 $fa-color: #e1e471
+$footer-bg-color: #d3e3b6
+
 $links-color: #000000
 $section-bg-color-one: #ffffff
-$section-bg-color-two: #fbf9f9b8
-$footer-bg-color: #f3f3f3
+$section-bg-color-two: unquote('#fbf9f9b8')
 
 //---------------------------------HAMBURGER-MENU---------------------------------
 html, body
@@ -103,6 +105,25 @@ nav.active .menu-link
   &:after
     transform: rotate(45deg)
     bottom: 0px
+
+@media screen and (min-width: 768px)
+  .menu-list
+    .hamburger-mobile
+      display: none
+@media screen and (max-width: 414px)
+  .menu
+    width: 70px
+  .active
+    width: 100%
+    height: 100%
+  nav.active .menu-container
+    transform: translate3d(0,0,0)
+    padding-left: 0px
+    width: 414px
+    text-align: center
+    .menu-list
+      padding-left: 20px
+
 //---------------------------------HAMBURGER-MENU---------------------------------
 .navbar
   display: block
@@ -175,7 +196,7 @@ figure
   transform-style: preserve-3d
   // box-shadow: 0 1px 5px rgba(0, 0, 0, 0.9)
   box-shadow: 0 1px 6px rgba(57,73,76,0.35)
-  min-width: 444px
+  min-width: 330px
   min-height: 270px
 
 figure
@@ -211,7 +232,7 @@ figure
       left: 0
       width: 100%
       height: 100%
-      background: linear-gradient(#ffffff00, #f3c677b0)
+      background: linear-gradient(unquote('#ffffff00'),unquote('#f3c677b0'))
       content: ''
       opacity: 0
       transform: translate3d(0, 50%, 0)
@@ -286,6 +307,12 @@ figure a
   left: 0
   width: 100%
   height: 100%
+
+@media screen and (max-width: 414px)
+  .front:hover p
+    transform: translate3d(0, 20px, 0)
+  .front h2:after
+    left: 60px
 
 //--------------------------------CARDS ON MAIN PAGE--------------------------------
 //-----------------------------------STEPS SECTION----------------------------------
@@ -378,7 +405,7 @@ html
 .steps-img
   display: table
   margin: auto
-  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)
   background-position: center
   background-size: cover
   width: 150px
@@ -428,9 +455,7 @@ html
     font-size: 22px
     background-color: #5cb85c
     background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%)
-    transition-delay: 0.1s
     &:hover
-      transition: background-image 1s
       background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%)
       border: 0px
         color: #00000063
@@ -441,6 +466,14 @@ html
   padding:
     top: 30px
     bottom: 30px
+
+.explanation-img
+  background-image: url(https://techcrunch.com/wp-content/uploads/2018/03/gettyimages-705351545.jpg?w=730&crop=1)
+  background-position: center
+  background-size: cover
+  width: 100%
+  min-height: 200px
+  padding-top: 100%
 .explanation-title
   text-align: center
   font-family: 'Sunflower', sans-serif
@@ -454,7 +487,6 @@ html
 //------------------------------------EXPLANATION-----------------------------------
 .explanation, .blog-explanation
   img,.blog-img
-    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%)
     background-blend-mode: screen
     position: relative
     width: 100%
@@ -462,11 +494,11 @@ html
 //---------------------------------BLOG-EXPLANATION-----------------------------------
 .blog-explanation
   background-color: $section-bg-color-two
-  padding: 15px 0px 15px 0px
+  padding: 70px 0px 50px 0px
 .blog-title
   font-family: 'Sunflower', sans-serif
 
-$border-color: #00000021
+$border-color:  unquote('#00000021')
 
 .big-blog-container
   border:
@@ -479,10 +511,20 @@ $border-color: #00000021
       top: 1px solid $border-color
     .blog-img
       margin: 15px auto
+
+.first-blog-container
+  .blog-img
+    padding-top: 119%
   
-  
+
 .blog-img
   overflow: hidden
+  background-image: url(https://ak.picdn.net/assets/cms/14c40a5a7a7f50788cf9e346071ab49ad1201b12-17d705f0349ed08f5387b39c7644054a59affe52-LOHP_vector_module_shutterstock_307324316-min.jpg)
+  background-position: center
+  background-size: cover
+  width: 100%
+  min-height: 200px
+  height: auto
   &:hover .blog-img-text
     top: 0
 
@@ -499,7 +541,7 @@ $border-color: #00000021
   justify-content: space-around
   &:before
     content: ''
-    background-image: linear-gradient(to top, #ffffff00 0%, #f9f047 100%)
+    background-image: linear-gradient(to bottom, #808080 0%, #000000 100%)
     position: absolute
     top: 0
     left: 0
@@ -507,7 +549,10 @@ $border-color: #00000021
     height: 100%
     opacity: 0.5
   & p
-    font-size: 20px
+    font-size: 2em
+    color: #ffffff
+    z-index: 1
+
   &:hover
     opacity: 1
  
@@ -516,16 +561,50 @@ $border-color: #00000021
 .info
   background-color: $section-bg-color-one
   p
+    font-family: 'Lato', sans-serif
     margin: 20px 0px 20px 0px
-    font-size: 1.3em
+    font-size: 13px
 //---------------------------------------INF0-----------------------------------------
 .footer
-    background-color: $footer-bg-color
-.footer-content
-    ul
-        list-style: none
-        li
-            float: left
-            width: 33.33333333%
-#message
-    size: auto
+  background-color: $footer-bg-color
+  padding-top: 30px
+  padding-bottom: 30px
+
+.librarus-link, .pages-link
+  font-family: 'Lato', sans-serif
+  font-size: 1.6em
+  margin-bottom: 10px
+  a
+    color: #000000
+    text-decoration: none
+  &:first-child
+    font-weight: 900
+    font-size: 1.8em
+
+.footer-librarus
+  padding-left: 25px
+  .librarus-link
+
+
+.footer-pages
+  padding-left: 50px
+  margin: 0px -15px
+  border:
+    right: 1px solid #0000001a
+    left: 1px solid #0000001a
+    
+
+.text-box
+  height: 150px
+  vertical-align: top
+  width: 100%
+  border: 1px solid #ccc
+  font-size: 14px
+  border-radius: 3px
+  resize: none
+  font-size: 18px
+  line-height: 1.3333333
+  padding: 10px 16px
+
+.send-button
+  width: 50%
