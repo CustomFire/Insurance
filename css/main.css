@@ -386,6 +386,12 @@ figure a {
   }
 }
 
+@media screen and (min-width: 500px) and (max-width: 998px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
 html {
   box-sizing: border-box;
 }
@@ -529,6 +535,18 @@ html {
   }
   .steps-description {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 500px) and (min-width: 500px) and (max-width: 998px) {
+  .steps-two .steps-img:after, .steps-two .steps-img:before {
+    width: 195px;
+  }
+  .steps-two .steps-img:after {
+    left: 140px;
+  }
+  .steps-two .steps-img:before {
+    left: -185px;
   }
 }
 
