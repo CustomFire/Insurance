@@ -6,38 +6,19 @@
     <link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/FAQ.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>FAQ</title>
 </head>
 <body>
     <div class="header">
 
     </div>
     <div class="main">
-        <div class="faq-cntainer">
+        <div class="faq-container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="faq-content">
                         <div class="container">
-                            <div class="col-md-4">
-                                <ul class="list-group help-group">
-                                    <div class="faq-list list-group nav nav-tabs">
-                                        <a href="#tab1" class="list-group-item active" role="tab" data-toggle="tab">Frequently Asked Questions</a>
-                                        <a href="#tab2" class="list-group-item" role="tab" data-toggle="tab">
-                                            <i class="mdi mdi-account"></i> My profile</a>
-                                        <a href="#tab3" class="list-group-item" role="tab" data-toggle="tab">
-                                            <i class="mdi mdi-account-settings"></i> My account</a>
-                                        <a href="#tab4" class="list-group-item" role="tab" data-toggle="tab">
-                                            <i class="mdi mdi-star"></i> My favorites</a>
-                                        <a href="#tab5" class="list-group-item" role="tab" data-toggle="tab">
-                                            <i class="mdi mdi-cart"></i> Checkout</a>
-                                        <a href="#tab6" class="list-group-item" role="tab" data-toggle="tab">
-                                            <i class="mdi mdi-heart"></i> Lorem ipsum</a>
-                                        <a href="#tab7" class="list-group-item" role="tab" data-toggle="tab">
-                                            <i class="mdi mdi-check"></i> Dolor sit amet</a>
-                                    </div>
-                                </ul>
-                            </div>
-                            <div class="col-md-8">
+                            <div class="col-md-12">
                                 <div class="tab-content panels-faq">
                                     <div class="tab-pane active" id="tab1">
                                         <div class="panel-group" id="help-accordion-1">
@@ -128,27 +109,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane" id="tab2">
-                                        <div class="panel-group" id="help-accordion-2">
-                                            <div class="panel panel-default panel-help">
-                                                <a href="#help-three" data-toggle="collapse" data-parent="#help-accordion-2">
-                                                    <div class="panel-heading">
-                                                        <h2>Lorem ipsum?</h2>
-                                                    </div>
-                                                </a>
-                                                <div id="help-three" class="collapse in">
-                                                    <div class="panel-body">
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis
-                                                            accusantium quisquam minima praesentium, beatae fugit illo nobis fugiat adipisci quia
-                                                            distinctio repellat culpa saepe, optio aperiam est!</p>
-                                                        <p>
-                                                            <strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe
-                                                            nam et.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -162,13 +122,12 @@
     </div>
     <script>
         $(function () {
-                // Since there's no list-group/tab integration in Bootstrap
-                $('.list-group-item').on('click', function (e) {
-                    var previous = $(this).closest(".list-group").children(".active");
-                    previous.removeClass('active'); // previous list-item
-                    $(e.target).addClass('active'); // activated list-item
-                });
+            $('.list-group-item').on('click', function (e) {
+                var previous = $(this).closest(".list-group").children(".active");
+                previous.removeClass('active');
+                $(e.target).addClass('active');
             });
+        });
     </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

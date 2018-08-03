@@ -122,7 +122,7 @@ nav.active .menu-link
   nav.active .menu-container
     transform: translate3d(0,0,0)
     padding-left: 0px
-    width: 414px
+    width: 100%
     text-align: center
     .menu-list
       padding-left: 20px
@@ -311,11 +311,26 @@ figure a
   width: 100%
   height: 100%
 
-@media screen and (max-width: 414px)
+@media screen and (max-width: 768px)
   .front:hover p
     transform: translate3d(0, 20px, 0)
   .front h2:after
-    left: 60px
+    left: 50px
+    right: 50px
+
+@media screen and (max-width: 500px)
+  .front:hover p
+    transform: translate3d(0, 20px, 0)
+  .front h2:after
+    left: 50px
+    right: 50px
+  .card
+    margin:
+      bottom: 20px
+  .work-section
+    padding:
+      top: 40px
+  
 
 //--------------------------------CARDS ON MAIN PAGE--------------------------------
 //-----------------------------------STEPS SECTION----------------------------------
@@ -359,43 +374,6 @@ html
     &:before
       left: -237px
     &:after
-
-
-@media screen and (max-width: 500px)
-  .steps-one, .steps-two, .steps-three
-    margin-left: 15px
-    margin-right: 15px
-  .steps-two
-    .steps-img
-      &:before, &:after
-        display: none
-  .steps-one, .steps-two, .steps-three
-    padding-bottom: 130px
-  .steps-name
-    text-align: center
-  .steps-img
-    float: left
-    margin-right: 20px
-
-@media screen and (min-width: 500px)
-  .steps-timeline
-    padding-top: 0px
-    margin-top: 0px
-    margin-left: 16.65%
-    margin-right: 16.65%
-  .steps-one, .steps-two, .steps-three
-    float: left
-    width: 33%
-    margin-top: 0px
-  .steps-one
-    margin-left: -16.65%
-    margin-right: 16.65%
-  .steps-three
-    margin-left: 16.65%
-    margin-right: -16.65%
-  .steps-description
-    text-align: center
-  
 
 .steps-img
   display: table
@@ -442,6 +420,53 @@ html
       background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%)
       border: 0px
         color: #00000063
+
+
+@media screen and (max-width: 500px)
+  .steps-one, .steps-two, .steps-three
+    margin-left: 15px
+    margin-right: 15px
+    text-align: center
+  .steps-two
+    .steps-img
+      &:before, &:after
+        display: none
+  .steps-one, .steps-two, .steps-three
+    padding-bottom: 30px
+  .steps-name
+    text-align: center
+  // .steps-img
+  //   margin-left: 25%  
+  .steps-description
+    width: 100%
+  .steps-header
+    margin-top: 0px
+  .purchaise-motor
+    button
+      width: 100%
+  .purchaise-travel
+    button
+      width: 100%
+
+@media screen and (min-width: 500px)
+  .steps-timeline
+    padding-top: 0px
+    margin-top: 0px
+    margin-left: 16.65%
+    margin-right: 16.65%
+  .steps-one, .steps-two, .steps-three
+    float: left
+    width: 33%
+    margin-top: 0px
+  .steps-one
+    margin-left: -16.65%
+    margin-right: 16.65%
+  .steps-three
+    margin-left: 16.65%
+    margin-right: -16.65%
+  .steps-description
+    text-align: center
+  
 //-----------------------------------STEPS SECTION----------------------------------
 //------------------------------------EXPLANATION-----------------------------------
 .explanation
@@ -575,7 +600,9 @@ $border-color:  unquote('#00000021')
   border:
     right: 1px solid #0000001a
     left: 1px solid #0000001a
-    
+
+.input-lg
+  border-radius: 0px
 
 .text-box
   height: 150px
@@ -583,7 +610,7 @@ $border-color:  unquote('#00000021')
   width: 100%
   border: 1px solid #ccc
   font-size: 14px
-  border-radius: 3px
+  border-radius: 0px
   resize: none
   font-size: 18px
   line-height: 1.3333333
@@ -592,6 +619,21 @@ $border-color:  unquote('#00000021')
 .send-button
   width: 50%
 
+@media screen and (max-width: 768px) and (min-width: 500px)
+  .footer-form
+    margin-bottom: 30px
+    text-align: center
+  .footer-pages
+    border:
+      right: 0px
+    padding-left: 20px
+  .footer-librarus
+    padding-left: 130px
+
 @media screen and (max-width: 500px)
+  .footer-form
+    margin-bottom: 30px
+    text-align: center
   .footer-pages
     padding-left: 20px
+    

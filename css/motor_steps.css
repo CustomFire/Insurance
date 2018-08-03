@@ -1,14 +1,65 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Lato|Nunito|Sunflower:300");
 * {
   font-family: 'Lato', sans-serif;
 }
 
+.payment {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.payment-title {
+  text-align: center;
+}
+
+.payment-title h2 {
+  font-family: 'Sunflower', sans-serif;
+}
+
+.payment-form button {
+  color: #ffffff;
+  font-size: 22px;
+  background-color: #5cb85c;
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+
+.payment-form button:hover {
+  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+  border: 0px;
+  border-color: #00000063;
+}
+
+.payment-form-title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+}
+
 .before-travel {
+  padding-top: 50px;
+  padding-bottom: 30px;
   background-color: #ededed;
+}
+
+.before-travel .card {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.before-travel .card p {
+  font-size: 18px;
 }
 
 .travel-title {
   text-align: center;
+  font-family: 'Sunflower', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.travel-text {
+  font-family: 'Lato', sans-serif;
+  margin: 20px 0px 20px 0px;
+  font-size: 15px;
 }
 
 .step2-title {
@@ -19,15 +70,15 @@
   background-color: #ededed;
 }
 
-.company-card .company-logo, .company-card .company-name, .company-card .company-rate, .company-card .insurance-cost, .company-card .buy-button {
+.company-logo, .company-name, .company-rate, .insurance-cost, .buy-button {
   display: inline-block;
 }
 
-.company-card .company-rate .checked {
-  color: orange;
+.company-rate .checked {
+  color: gold;
 }
 
-.company-card .insurance-cost, .company-card .buy-button {
+.insurance-cost, .buy-button {
   float: right;
 }
 
@@ -45,8 +96,26 @@
 }
 
 .step3-form-wrapper {
-  border: 1px solid black;
   background-color: #ffffff;
+  padding: 30px;
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+.card-meaning {
+  font-size: 20px;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+@media screen and (max-width: 500px) {
+  .step3-warning-button {
+    text-align: center;
+  }
 }
 
 .order-card {

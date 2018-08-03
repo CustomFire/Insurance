@@ -1,61 +1,153 @@
-@import url('https://fonts.googleapis.com/css?family=Lato')
+@import url('https://fonts.googleapis.com/css?family=Lato|Nunito|Sunflower:300')
+
 *
     font-family: 'Lato', sans-serif
+
+
+
+$hamburger-color: #d8e39a
+
+$navbar-color: #d6f58e
+$cards-color: #82b21e
+// $fa-color: #e1e471
+$fa-color: #ffffff
+// $card-h2-color: #e1e471d1
+$cards-h2-color: #ffffff
+$footer-bg-color: #d3e3b6
+
+$links-color: #000000
+$section-bg-color-one: #ffffff
+$section-bg-color-two: unquote('#fbf9f9b8')
+
+//------------------------PAYMENT------------------------
+.payment
+    padding:
+        top: 50px
+        bottom: 50px
+.payment-title
+    text-align: center
+    h2
+        font-family: 'Sunflower', sans-serif
+.payment-form
+    button
+        color: #ffffff
+        font-size: 22px
+        background-color: #5cb85c
+        background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%)
+        &:hover
+            background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%)
+            border: 0px
+                color: #00000063
+.payment-form-title
+    // text-align: center
+    font-family: 'Nunito', sans-serif
+    font-size: 20px
+
+//------------------------PAYMENT------------------------
+//------------------------TRAVEL------------------------
 .before-travel
+    padding:
+        top: 50px
+        bottom: 30px
     background-color: #ededed
+    .card
+        padding:
+            bottom: 30px
+        text-align: center
+        p
+            font-size: 18px
+
 .travel-title
     text-align: center
+    font-family: 'Sunflower', sans-serif
+    text-transform: uppercase
+    margin:
+        bottom: 30px
+.travel-text
+    font-family: 'Lato', sans-serif
+    margin: 20px 0px 20px 0px
+    font-size: 15px 
+
+//------------------------TRAVEL------------------------    
 // Motor step 2==============================================================
 .step2-title
     text-align: center 
+
 .company-card
     background-color: #ededed
-    .company-logo, .company-name, .company-rate, .insurance-cost, .buy-button
-        display: inline-block
-    .company-rate
-        .checked 
-            color: orange
-    .insurance-cost, .buy-button
-        float: right
+
+.company-logo, .company-name, .company-rate, .insurance-cost, .buy-button
+    display: inline-block
+
+.company-rate
+    .checked 
+        color: gold
+
+.insurance-cost, .buy-button
+    float: right
+
 .step2-calculation
     border:
         top: 1px solid black
     background-color: #ededed
+
 .calculate-button
     text-align: right
 //Motor step 3==============================================================
 .step3-form
     background-color: #ededed
+
 .step3-form-wrapper
-    border: 1px solid black
     background-color: #ffffff
+    padding: 30px
+
+.card-title
+    font-size: 20px
+
+.card-meaning
+    font-size: 20px
+
+.form-control
+    border-radius: 0px
+
+@media screen and (max-width: 500px)
+    .step3-warning-button
+        text-align: center
 //Motor step 4==============================================================
 .order-card
     background-color: #ededed
+
 .card-titles
     li:first-child
         border:
             bottom: 2px solid silver
+
     li:last-child
         border:
             bottom: 0px
+
     ul
         padding:
             left: 10px
             right: 10px
         list-style: none
+
         li
             border:
                 bottom: 1px solid silver
+
             span
                 width: 49%
                 display: inline-block
+
 .customer-info
     .form-group
         label
             text-align: left
+
 .order-card
     background-color: #ededed
+    
 //Motor modal window==============================================================
 .modal-button-succes
     float: right
