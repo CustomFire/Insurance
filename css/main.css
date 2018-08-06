@@ -686,7 +686,10 @@ html {
 .footer {
   background-color: #d3e3b6;
   padding-top: 30px;
-  padding-bottom: 30px;
+}
+
+.footer-content {
+  padding-bottom: 25px;
 }
 
 .librarus-link, .pages-link {
@@ -737,16 +740,67 @@ html {
 
 .send-button {
   width: 50%;
+  border-radius: 0px;
+}
+
+.footer-librarus span i, .footer-pages span i {
+  display: none;
+}
+
+.footer-form .form-group .form-control {
+  height: 30px;
+  font-size: 20px;
+}
+
+.footer-form .form-group .text-box {
+  height: 120px;
+}
+
+.footer-copyright {
+  background-color: #a0b180;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 20px;
+}
+
+.copyright p {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1024px) {
+  .navbar-brand {
+    margin-left: 40%;
+  }
+  .footer-librarus .span-icon, .footer-pages .span-icon {
+    position: relative;
+  }
+  .footer-librarus .span-icon i, .footer-pages .span-icon i {
+    display: block;
+    position: absolute;
+    top: 19%;
+    left: -30px;
+  }
   .footer-librarus, .footer-pages {
     height: 35px;
+    margin-bottom: 20px;
     overflow: hidden;
     transition: 0.5s;
+    padding-left: 50px;
   }
-  .footer-librarus:hover, .footer-pages:hover {
+  .footer-pages {
+    border: 0px;
+    margin: 0px;
+  }
+  .footer-pages:hover {
     height: 350px;
+    border-bottom: 1px solid #9a9a9a;
+  }
+  .footer-librarus:hover {
+    height: 150px;
+    border-bottom: 1px solid #9a9a9a;
   }
 }
 
@@ -756,11 +810,11 @@ html {
     text-align: center;
   }
   .footer-pages {
+    border-left: 0px;
     border-right: 0px;
-    padding-left: 20px;
   }
-  .footer-librarus {
-    padding-left: 130px;
+  .footer-librarus, .footer-pages {
+    padding-left: 30px;
   }
 }
 
@@ -768,8 +822,5 @@ html {
   .footer-form {
     margin-bottom: 30px;
     text-align: center;
-  }
-  .footer-pages {
-    padding-left: 20px;
   }
 }

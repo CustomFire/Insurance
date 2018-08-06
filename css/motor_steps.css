@@ -1,11 +1,40 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Nunito|Sunflower:300");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Anton|Bree+Serif|Faster+One|Lato|Nunito|Slabo+27px|Spinnaker");
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,800);
+@import url("https://fonts.googleapis.com/css?family=Sunflower:300");
+@import url(https://fonts.googleapis.com/css?family=Lato:300,700);
 * {
   font-family: 'Lato', sans-serif;
 }
 
+h2 {
+  font-family: 'Sunflower', sans-serif;
+}
+
+.card {
+  text-align: center;
+}
+
+.card p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+}
+
+.card-img {
+  display: inline-block;
+  background-image: url(http://via.placeholder.com/200x200&text=Title);
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  min-width: 200px;
+  border-radius: 50%;
+  width: 200px;
+}
+
 .payment {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background-image: linear-gradient(to top, #96fbc461 0%, #f9f5864f 100%);
 }
 
 .payment-title {
@@ -14,30 +43,43 @@
 
 .payment-title h2 {
   font-family: 'Sunflower', sans-serif;
+  font-size: 40px;
+}
+
+.payment-form {
+  padding: 15px;
+  border: 1px solid #12a6677d;
+  background-color: #fff;
+  text-align: center;
+}
+
+.payment-form .form-control {
+  font-size: 30px;
+  height: 50px;
 }
 
 .payment-form button {
   color: #ffffff;
-  font-size: 22px;
+  font-size: 35px;
   background-color: #5cb85c;
   background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  transition-delay: 0.1s;
+  height: 64px;
 }
 
 .payment-form button:hover {
-  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
   border: 0px;
-  border-color: #00000063;
 }
 
 .payment-form-title {
   font-family: 'Nunito', sans-serif;
-  font-size: 20px;
+  font-size: 38px;
+  color: #636363;
 }
 
 .before-travel {
-  padding-top: 50px;
   padding-bottom: 30px;
-  background-color: #ededed;
 }
 
 .before-travel .card {
@@ -47,6 +89,15 @@
 
 .before-travel .card p {
   font-size: 18px;
+  margin: 0;
+  overflow: hidden;
+  color: #5454548c;
+}
+
+.card-wrapper {
+  background-color: #fbf9f9b8;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .travel-title {
@@ -59,25 +110,65 @@
 .travel-text {
   font-family: 'Lato', sans-serif;
   margin: 20px 0px 20px 0px;
-  font-size: 15px;
+  font-size: 13px;
+}
+
+.page-title {
+  padding-top: 30px;
+  padding-bottom: 14px;
 }
 
 .step2-title {
   text-align: center;
 }
 
+.company-cards {
+  padding-bottom: 10px;
+}
+
 .company-card {
+  width: 100%;
   background-color: #ededed;
   margin-top: 0px;
   margin-bottom: 15px;
 }
 
-.company-logo, .company-name, .company-rate, .insurance-cost, .buy-button {
-  display: inline-block;
+.company-card td {
+  width: 28%;
+}
+
+.company-card td > {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.company-name, .company-rate {
+  font-size: 35px;
+  float: left;
+}
+
+.insurance-cost .cost {
+  font-size: 35px;
+}
+
+.insurance-cost .more {
+  font-size: 20px;
+}
+
+.buy-button {
+  margin-right: 20px;
+  float: right;
+}
+
+.buy-button button {
+  font-size: 35px;
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
 }
 
 .logo-img {
-  background-image: url(http://via.placeholder.com/125x125&text=logo);
+  background-image: url(https://ua.all.biz/img/ua/service_catalog/395051.jpeg);
+  background-position: center;
+  background-size: cover;
   min-width: 100px;
   min-height: 100px;
   border-radius: 50%;
@@ -88,12 +179,53 @@
 }
 
 .step2-calculation {
-  border-top: 1px solid black;
-  background-color: #ededed;
+  background-color: #fbf9f9b8;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.form1, .form2 {
+  width: 70%;
+}
+
+.form1 {
+  float: right;
+  margin-right: 50px;
+}
+
+.form2 {
+  float: left;
+  margin-left: 50px;
+}
+
+.calculation-title {
+  text-align: center;
+}
+
+#little-text {
+  font-size: 18px;
+  color: #949494;
+}
+
+.form-group label {
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.form-group input {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  height: 40px;
 }
 
 .calculate-button {
   text-align: right;
+}
+
+.calculate-button button {
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  font-size: 20px;
 }
 
 .step3-form {

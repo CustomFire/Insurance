@@ -31,6 +31,10 @@ h2 {
   width: 200px;
 }
 
+.form-control {
+  border-radius: 0px;
+}
+
 .tab-pane {
   padding-top: 15px;
 }
