@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/FAQ.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQ</title>
+</head>
+<body>
+    <div class="header">
+
+    </div>
+    <div class="main">
+        <div class="faq-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="faq-content">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <div class="tab-content panels-faq">
+                                    <div class="tab-pane active" id="tab1">
+                                        <div class="panel-group" id="help-accordion-1">
+                                            <div class="panel panel-default panel-help">
+                                                <a href="#opret-produkt" data-toggle="collapse" data-parent="#help-accordion-1">
+                                                    <div class="panel-heading">
+                                                        <h2>How do I edit my profile?</h2>
+                                                    </div>
+                                                </a>
+                                                <div id="opret-produkt" class="collapse in">
+                                                    <div class="panel-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis
+                                                            accusantium quisquam minima praesentium, beatae fugit illo nobis fugiat adipisci quia
+                                                            distinctio repellat culpa saepe, optio aperiam est!</p>
+                                                        <p>
+                                                            <strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe
+                                                            nam et.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default panel-help">
+                                                <a href="#rediger-produkt" data-toggle="collapse" data-parent="#help-accordion-1">
+                                                    <div class="panel-heading">
+                                                        <h2>How do I upload a new profile picture?</h2>
+                                                    </div>
+                                                </a>
+                                                <div id="rediger-produkt" class="collapse">
+                                                    <div class="panel-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis
+                                                            accusantium quisquam minima praesentium, beatae fugit illo nobis fugiat adipisci quia
+                                                            distinctio repellat culpa saepe, optio aperiam est!</p>
+                                                        <p>
+                                                            <strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe
+                                                            nam et.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default panel-help">
+                                                <a href="#ret-pris" data-toggle="collapse" data-parent="#help-accordion-1">
+                                                    <div class="panel-heading">
+                                                        <h2>Can I change my phone number?</h2>
+                                                    </div>
+                                                </a>
+                                                <div id="ret-pris" class="collapse">
+                                                    <div class="panel-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis
+                                                            accusantium quisquam minima praesentium, beatae fugit illo nobis fugiat adipisci quia
+                                                            distinctio repellat culpa saepe, optio aperiam est!</p>
+                                                        <p>
+                                                            <strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe
+                                                            nam et.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default panel-help">
+                                                <a href="#slet-produkt" data-toggle="collapse" data-parent="#help-accordion-1">
+                                                    <div class="panel-heading">
+                                                        <h2>Where do I change my privacy settings?</h2>
+                                                    </div>
+                                                </a>
+                                                <div id="slet-produkt" class="collapse">
+                                                    <div class="panel-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis
+                                                            accusantium quisquam minima praesentium, beatae fugit illo nobis fugiat adipisci quia
+                                                            distinctio repellat culpa saepe, optio aperiam est!</p>
+                                                        <p>
+                                                            <strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe
+                                                            nam et.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default panel-help">
+                                                <a href="#opret-kampagne" data-toggle="collapse" data-parent="#help-accordion-1">
+                                                    <div class="panel-heading">
+                                                        <h2>What is this?</h2>
+                                                    </div>
+                                                </a>
+                                                <div id="opret-kampagne" class="collapse">
+                                                    <div class="panel-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis
+                                                            accusantium quisquam minima praesentium, beatae fugit illo nobis fugiat adipisci quia
+                                                            distinctio repellat culpa saepe, optio aperiam est!</p>
+                                                        <p>
+                                                            <strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe
+                                                            nam et.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+    <script>
+        $(function () {
+            $('.list-group-item').on('click', function (e) {
+                var previous = $(this).closest(".list-group").children(".active");
+                previous.removeClass('active');
+                $(e.target).addClass('active');
+            });
+        });
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

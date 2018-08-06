@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+.travel-card, .modal-card {
+  background-color: #ededed;
+}
+
+.card-titles li:first-child {
+  border-bottom: 2px solid silver;
+}
+
+.card-titles li:last-child {
+  border-bottom: 0px;
+}
+
+.card-titles ul {
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+}
+
+.card-titles ul li {
+  border-bottom: 1px solid silver;
+}
+
+.card-titles ul li span {
+  width: 49%;
+  display: inline-block;
+}
+
+.window {
+  border: 1px solid black;
+}
