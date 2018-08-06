@@ -69,22 +69,29 @@ $section-bg-color-two: unquote('#fbf9f9b8')
     font-size: 15px 
 
 //------------------------TRAVEL------------------------    
-// Motor step 2==============================================================
+//============================================================== Motor step 2==============================================================
 .step2-title
     text-align: center 
 
 .company-card
     background-color: #ededed
+    margin:
+        top: 0px
+        bottom: 15px
 
 .company-logo, .company-name, .company-rate, .insurance-cost, .buy-button
     display: inline-block
+
+.logo-img
+    background-image: url(http://via.placeholder.com/125x125&text=logo)
+    min-width: 100px
+    min-height: 100px
+    border-radius: 50%
 
 .company-rate
     .checked 
         color: gold
 
-.insurance-cost, .buy-button
-    float: right
 
 .step2-calculation
     border:
@@ -93,8 +100,11 @@ $section-bg-color-two: unquote('#fbf9f9b8')
 
 .calculate-button
     text-align: right
-//Motor step 3==============================================================
+//==============================================================Motor step 3==============================================================
 .step3-form
+    background-color: #ededed
+
+.order-card
     background-color: #ededed
 
 .step3-form-wrapper
@@ -113,43 +123,34 @@ $section-bg-color-two: unquote('#fbf9f9b8')
 @media screen and (max-width: 500px)
     .step3-warning-button
         text-align: center
-//Motor step 4==============================================================
-.order-card
-    background-color: #ededed
-
-.card-titles
-    li:first-child
-        border:
-            bottom: 2px solid silver
-
-    li:last-child
-        border:
-            bottom: 0px
-
-    ul
-        padding:
-            left: 10px
-            right: 10px
-        list-style: none
-
-        li
-            border:
-                bottom: 1px solid silver
-
-            span
-                width: 49%
-                display: inline-block
-
+//==============================================================Motor step 4==============================================================
+.step4-form
+    padding:
+        top: 30px
+        bottom: 30px
+    
 .customer-info
     .form-group
         label
             text-align: left
 
-.order-card
-    background-color: #ededed
+.contact-info
+    form
+        .form-group > div
+            margin: 15px 0 15px 0
+    label
+        width: 40%
+    button
+        border-radius: 0px
+    input
+        border: 1px solid #000000
     
-//Motor modal window==============================================================
+//==============================================================Motor modal window==============================================================
 .modal-button-succes
     float: right
 .modal-card
     background-color: #ededed
+.modal-content
+    padding: 15px
+.start-date
+    text-align: center

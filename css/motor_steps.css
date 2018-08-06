@@ -68,18 +68,23 @@
 
 .company-card {
   background-color: #ededed;
+  margin-top: 0px;
+  margin-bottom: 15px;
 }
 
 .company-logo, .company-name, .company-rate, .insurance-cost, .buy-button {
   display: inline-block;
 }
 
-.company-rate .checked {
-  color: gold;
+.logo-img {
+  background-image: url(http://via.placeholder.com/125x125&text=logo);
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 50%;
 }
 
-.insurance-cost, .buy-button {
-  float: right;
+.company-rate .checked {
+  color: gold;
 }
 
 .step2-calculation {
@@ -92,6 +97,10 @@
 }
 
 .step3-form {
+  background-color: #ededed;
+}
+
+.order-card {
   background-color: #ededed;
 }
 
@@ -118,39 +127,29 @@
   }
 }
 
-.order-card {
-  background-color: #ededed;
-}
-
-.card-titles li:first-child {
-  border-bottom: 2px solid silver;
-}
-
-.card-titles li:last-child {
-  border-bottom: 0px;
-}
-
-.card-titles ul {
-  padding-left: 10px;
-  padding-right: 10px;
-  list-style: none;
-}
-
-.card-titles ul li {
-  border-bottom: 1px solid silver;
-}
-
-.card-titles ul li span {
-  width: 49%;
-  display: inline-block;
+.step4-form {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .customer-info .form-group label {
   text-align: left;
 }
 
-.order-card {
-  background-color: #ededed;
+.contact-info form .form-group > div {
+  margin: 15px 0 15px 0;
+}
+
+.contact-info label {
+  width: 40%;
+}
+
+.contact-info button {
+  border-radius: 0px;
+}
+
+.contact-info input {
+  border: 1px solid #000000;
 }
 
 .modal-button-succes {
@@ -159,4 +158,12 @@
 
 .modal-card {
   background-color: #ededed;
+}
+
+.modal-content {
+  padding: 15px;
+}
+
+.start-date {
+  text-align: center;
 }
