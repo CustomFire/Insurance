@@ -126,7 +126,7 @@ nav.active .menu-link {
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
   .menu {
     width: 70px;
   }
@@ -175,6 +175,15 @@ nav.active .menu-link {
   color: #000000;
   background-color: #f3c677b0;
   box-shadow: 0 1px 6px rgba(57, 73, 76, 0.35);
+}
+
+.dropdown-menu {
+  min-width: 70px;
+  background-color: beige;
+}
+
+.dropdown-menu li {
+  width: 50px;
 }
 
 .choose-section {
