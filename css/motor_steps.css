@@ -135,12 +135,61 @@ h2 {
   text-align: center;
 }
 
-.company-rate .checked {
-  color: gold;
+.company-card {
+  padding: 1rem;
+  background-color: #e0e0e02b;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.company-card .company-logo-name {
+  display: flex;
+  align-items: center;
+}
+
+.company-card .company-logo-name .logo img {
+  height: 70px;
+  width: 70px;
+}
+
+.company-card .company-logo-name .name {
+  width: 30rem;
+  margin-left: 2rem;
+  display: flex;
+}
+
+.company-card .company-rate {
+  display: flex;
+}
+
+.company-card .company-price-buy {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.company-card .company-price-buy .price-view a {
+  display: block;
+  font-size: 20px;
+}
+
+.company-card .company-price-buy .buy {
+  margin-left: 2rem;
+}
+
+.company-card .company-price-buy .buy .btn-lg {
+  font-size: 30px;
+}
+
+.calculator {
+  background-color: #fbf9f9b8;
 }
 
 .step2-calculation {
-  background-color: #fbf9f9b8;
   padding-top: 30px;
   padding-bottom: 70px;
 }
@@ -189,17 +238,84 @@ h2 {
   font-size: 20px;
 }
 
+@media screen and (max-width: 991px) {
+  .company-card .company-logo-name .name {
+    width: 13rem;
+    margin-left: 1rem;
+    display: flex;
+  }
+  .company-card .company-price-buy {
+    flex-direction: column;
+  }
+  .company-card .company-price-buy .price {
+    font-size: 4rem;
+  }
+  .company-card .company-price-buy .buy {
+    margin-top: 1rem;
+    margin-left: 0rem;
+  }
+  .company-card .company-price-buy .buy button {
+    width: 30rem;
+  }
+  .form1, .form2 {
+    width: 100%;
+  }
+  .form1 {
+    float: none;
+    margin-right: 0px;
+  }
+  .form2 {
+    float: none;
+    margin-left: 0px;
+  }
+  .calculation-title {
+    margin-bottom: 20px;
+  }
+  .calculate-button {
+    padding-top: 15px;
+    text-align: center;
+  }
+  .calculate-button button {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .company-card {
+    flex-direction: column;
+  }
+  .company-card .company-logo-name {
+    flex-direction: column;
+  }
+  .company-card .company-logo-name .name {
+    margin: 1rem 0;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 25px;
+    width: 30rem;
+    margin-left: 1rem;
+    display: flex;
+  }
+}
+
 .step3-form {
-  background-color: #ededed;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 
 .order-card {
-  background-color: #ededed;
+  background-color: #ededed40;
+  font-size: 20px;
 }
 
-.step3-form-wrapper {
-  background-color: #ffffff;
-  padding: 30px;
+.customer-info .form-group {
+  margin: 0;
+}
+
+.info-title {
+  text-align: center;
+  font-family: 'Sunflower', sans-serif;
+  font-size: 30px;
 }
 
 .card-title {
@@ -214,19 +330,68 @@ h2 {
   border-radius: 0px;
 }
 
+.checkbox input {
+  top: 0;
+  left: 10px;
+  zoom: 2;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.buttons button {
+  font-size: 25px;
+}
+
+.step3-warning-button button {
+  font-size: 25px;
+}
+
 @media screen and (max-width: 500px) {
+  .customer-info .form-group {
+    margin-top: 1rem;
+  }
+  .checkbox {
+    text-align: center;
+  }
+  .checkbox input {
+    left: 25px;
+  }
+  .checkbox label {
+    padding-left: 50px;
+  }
   .step3-warning-button {
     text-align: center;
   }
 }
 
+@media screen and (max-width: 320px) {
+  .buttons button {
+    font-size: 20px;
+    width: 45%;
+  }
+}
+
 .step4-form {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 70px;
 }
 
 .customer-info .form-group label {
   text-align: left;
+}
+
+#pas-series {
+  width: 15%;
+}
+
+.contact-info .form-group > div {
+  display: flex;
+  align-items: center;
 }
 
 .contact-info form .form-group > div {
@@ -235,6 +400,7 @@ h2 {
 
 .contact-info label {
   width: 40%;
+  margin-right: 20px;
 }
 
 .contact-info button {
@@ -242,6 +408,7 @@ h2 {
 }
 
 .contact-info input {
+  width: 100%;
   border: 1px solid #000000;
 }
 
