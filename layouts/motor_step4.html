@@ -255,21 +255,31 @@
                 <div class="col-md-6">
                     <div class="contact-info">
                         <div class="info-title">Enter contact information</div>
-                        <form>
-                            <div class="form-group">
-                                <div class="pasport">
+                        <form action="">
+                            <div class="field-section">
+                                <div class="field-name">
                                     <label for="">Passport series and number</label>
-                                    <input type="text" id="pas-series">
-                                    <input type="text" id="pas-number">
                                 </div>
-                                <div class="issued">
+                                <div class="field">
+                                    <input type="text" id="pass-series" placeholder="Series">
+                                    <input type="text" id="pass-number" placeholder="Number">
+                                </div>
+                            </div>
+                            <div class="field-section">
+                                <div class="field-name">
                                     <label for="">Issued by</label>
-                                    <input type="text">
                                 </div>
-                                <div class="when">
+                                <div class="field">
+                                    <input type="text" placeholder="Issued by">
+                                </div>
+                            </div>
+                            <div class="field-section">
+                                <div class="field-name">
                                     <label for="">When</label>
+                                </div>
+                                <div class="field">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Day <span class="caret"></span></button>
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Действие <span class="caret"></span></button>
                                         <ul class="dropdown-menu" role="menu">
                                             <li><a href="#">Действие</a></li>
                                             <li><a href="#">Другое действие</a></li>
@@ -279,7 +289,7 @@
                                         </ul>
                                     </div>
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Month <span class="caret"></span></button>
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Действие <span class="caret"></span></button>
                                         <ul class="dropdown-menu" role="menu">
                                             <li><a href="#">Действие</a></li>
                                             <li><a href="#">Другое действие</a></li>
@@ -289,7 +299,7 @@
                                         </ul>
                                     </div>
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Year <span class="caret"></span></button>
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Действие <span class="caret"></span></button>
                                         <ul class="dropdown-menu" role="menu">
                                             <li><a href="#">Действие</a></li>
                                             <li><a href="#">Другое действие</a></li>
@@ -299,77 +309,137 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="name">
+                            </div>
+                            <div class="field-section">
+                                <div class="field-name">
                                     <label for="">Name</label>
-                                    <input type="text">
                                 </div>
-                                <div class="surname">
+                                <div class="field">
+                                    <input type="text" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="field-section">
+                                <div class="field-name">
                                     <label for="">Surname</label>
-                                    <input type="text">
                                 </div>
-                                <div class="Patronymic">
+                                <div class="field">
+                                    <input type="text" placeholder="Surname">
+                                </div>
+                            </div>
+                            <div class="field-section">
+                                <div class="field-name">
                                     <label for="">Patronymic</label>
-                                    <input type="text">
                                 </div>
-                                <div class="birthday">
+                                <div class="field">
+                                    <input type="text" placeholder="Patronymic">
+                                </div>
+                            </div>
+                            <div class="field-section">
+                                <div class="field-name">
                                     <label for="">Date of birthday</label>
+                                </div>
+                                <div class="field">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Day <span class="caret"></span></button>
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Действие <span class="caret"></span></button>
                                         <ul class="dropdown-menu" role="menu">
                                             <li><a href="#">Действие</a></li>
+                                            <li><a href="#">Другое действие</a></li>
+                                            <li><a href="#">Что-то иное</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Отдельная ссылка</a></li>
                                         </ul>
                                     </div>
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Month <span class="caret"></span></button>
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Действие <span class="caret"></span></button>
                                         <ul class="dropdown-menu" role="menu">
                                             <li><a href="#">Действие</a></li>
+                                            <li><a href="#">Другое действие</a></li>
+                                            <li><a href="#">Что-то иное</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Отдельная ссылка</a></li>
                                         </ul>
                                     </div>
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Year <span class="caret"></span></button>
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Действие <span class="caret"></span></button>
                                         <ul class="dropdown-menu" role="menu">
                                             <li><a href="#">Действие</a></li>
+                                            <li><a href="#">Другое действие</a></li>
+                                            <li><a href="#">Что-то иное</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Отдельная ссылка</a></li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="itn">
+                            </div>
+                            <div class="field-section">
+                                <div class="field-name">
                                     <label for="">ITN</label>
-                                    <input type="text">
                                 </div>
-                                <div class="reg-adr">
+                                <div class="field">
+                                    <input type="text" placeholder="ITN">
+                                </div>
+                            </div>
+                            <div class="field-section">
+                                <div class="field-name">
                                     <label for="">Registration address</label>
-                                    <input type="text">
                                 </div>
-                                <div class="itn">
+                                <div class="field">
+                                    <input type="text" placeholder="Reg.address">
+                                </div>
+                            </div>
+                            <div class="field-section">
+                                <div class="field-name">
                                     <label for="">ITN</label>
-                                    <input type="text">
                                 </div>
-                                <div class="h3">Enter the address of registration of the incured</div>
-                                <div class="locality">
+                                <div class="field">
+                                    <input type="text" placeholder="ITN">
+                                </div>
+                            </div>
+                            <div class="sep-info">
+                                <span>Enter the address of registration of the insured</span>
+                            </div>
+                            <div class="field-section">
+                                <div class="field-name">
                                     <label for="">Locality</label>
-                                    <input type="text">
                                 </div>
-                                <div class="street">
+                                <div class="field">
+                                    <input type="text" placeholder="Locality">
+                                </div>
+                            </div>
+                            <div class="field-section">
+                                <div class="field-name">
                                     <label for="">Street</label>
-                                    <input type="text">
                                 </div>
-                                <div class="house">
+                                <div class="field">
+                                    <input type="text" placeholder="Steet">
+                                </div>
+                            </div>
+                            <div class="field-section house">
+                                <div class="field-name" id="house-label">
                                     <label for="">House number</label>
-                                    <input type="text">
+                                </div>
+                                <div class="field">
+                                    <input type="text" placeholder="Number">
+                                </div>
+                                <div class="field-name">
                                     <label for="">Flat</label>
-                                    <input type="text">
+                                </div>
+                                <div class="field">
+                                    <input type="text" placeholder="Flat">
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-xs-6 col-sm-6 col-md-6">
-                            <button class="btn btn-warning btn-lg">Back</button>
-                        </div>
-                        <div class="col-xs-offset-3 col-xs-3 col-sm-offset-3 col-sm-3 col-md-offset-3 col-md-3">
-                            <button class="btn btn-success btn-lg" data-toggle="modal" data-target=".bs-example-modal-lg">Next</button>
+                    <div class="step4-buttons">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-push-6 col-sm-6 col-md-6">
+                                <button class="btn btn-success btn-lg" data-toggle="modal" data-target=".bs-example-modal-lg">Next</button>
+                            </div>
+                            <div class="col-xs-12 col-sm-pull-6 col-sm-6 col-md-6">
+                                <button class="btn btn-warning btn-lg">Back</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -379,29 +449,29 @@
     <script>
         var monthtext = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
 
-function populatedropdown(dayfield, monthfield, yearfield) {
-    var today = new Date()
-    var dayfield = document.getElementById(dayfield)
-    var monthfield = document.getElementById(monthfield)
-    var yearfield = document.getElementById(yearfield)
-    for (var i = 0; i < 31; i++)
-        dayfield.options[i] = new Option(i, i + 1)
-    dayfield.options[today.getDate()] = new Option(today.getDate(), today.getDate(), true, true) //select today's day
-    for (var m = 0; m < 12; m++)
-        monthfield.options[m] = new Option(monthtext[m], monthtext[m])
-    monthfield.options[today.getMonth()] = new Option(monthtext[today.getMonth()], monthtext[today.getMonth()], true, true) //select today's month
-    var thisyear = today.getFullYear()
-    for (var y = 0; y < 20; y++) {
-        yearfield.options[y] = new Option(thisyear, thisyear)
-        thisyear += 1
-    }
-    yearfield.options[0] = new Option(today.getFullYear(), today.getFullYear(), true, true) //select today's year
-}
+        function populatedropdown(dayfield, monthfield, yearfield) {
+            var today = new Date()
+            var dayfield = document.getElementById(dayfield)
+            var monthfield = document.getElementById(monthfield)
+            var yearfield = document.getElementById(yearfield)
+            for (var i = 0; i < 31; i++)
+                dayfield.options[i] = new Option(i, i + 1)
+            dayfield.options[today.getDate()] = new Option(today.getDate(), today.getDate(), true, true) //select today's day
+            for (var m = 0; m < 12; m++)
+                monthfield.options[m] = new Option(monthtext[m], monthtext[m])
+            monthfield.options[today.getMonth()] = new Option(monthtext[today.getMonth()], monthtext[today.getMonth()], true, true) //select today's month
+            var thisyear = today.getFullYear()
+            for (var y = 0; y < 20; y++) {
+                yearfield.options[y] = new Option(thisyear, thisyear)
+                thisyear += 1
+            }
+            yearfield.options[0] = new Option(today.getFullYear(), today.getFullYear(), true, true) //select today's year
+        }
 
-//populatedropdown(id_of_day_select, id_of_month_select, id_of_year_select)
-window.onload = function () {
-    populatedropdown("dayDropDown", "monthDropDown", "yearDropDown")
-}
+        //populatedropdown(id_of_day_select, id_of_month_select, id_of_year_select)
+        window.onload = function () {
+            populatedropdown("dayDropDown", "monthDropDown", "yearDropDown")
+        }
     </script>
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

@@ -7,8 +7,122 @@ h2 {
   font-family: "Sunflower", sans-serif;
 }
 
-.travel-card {
-  background-color: #ededed;
+.travel {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.step3-form {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.tab-content-3 {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.order-card {
+  font-size: 20px;
+}
+
+.order-card thead tr th {
+  border: 0px;
+}
+
+.order-card tbody {
+  background-color: #ededed2b;
+  border: 1px solid #5cb85c69;
+}
+
+.order-card tbody tr th, .order-card tbody tr td {
+  padding-left: 25px;
+  border: 0px;
+}
+
+.customer-info .form-group {
+  margin: 0;
+}
+
+.info-title {
+  text-align: center;
+  font-family: 'Sunflower', sans-serif;
+  font-size: 35px;
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+.card-meaning {
+  font-size: 20px;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+.custom-checkbox label {
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+.custom-checkbox #success {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.back-button {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.back-button button {
+  font-size: 25px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.buttons button {
+  font-size: 25px;
+}
+
+.step3-warning-button button {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 500px) {
+  .customer-info .form-group {
+    margin-top: 1rem;
+  }
+  .checkbox {
+    text-align: center;
+  }
+  .checkbox input {
+    left: 25px;
+  }
+  .checkbox label {
+    padding-left: 50px;
+  }
+  .step3-warning-button {
+    text-align: center;
+  }
+  .order-card tbody tr th, .order-card tbody tr td {
+    padding-left: 5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .buttons button {
+    font-size: 20px;
+    width: 45%;
+  }
 }
 
 .card {

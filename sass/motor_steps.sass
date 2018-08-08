@@ -144,6 +144,7 @@ h2
     justify-content: space-around
     align-items: center
     .company-logo-name
+        cursor: pointer
         display: flex
         align-items: center
         .logo
@@ -156,9 +157,14 @@ h2
             display: flex
 
     .company-rate
+        cursor: pointer
         display: flex
+        .checked
+            &:hover
+                color: gold
 
     .company-price-buy
+        cursor: pointer
         text-align: center
         display: flex
         align-items: center
@@ -207,13 +213,19 @@ h2
         font-size: 20px
         height: 40px
 
-
+.calculation-form
+    select
+        height: 40px
+        padding-left: 10px
+        font-size: 20px
+        border-radius: 4px
+        background-color: #fff
 
 .calculate-button
     text-align: right
     button
         background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%)
-        font-size: 20px
+        font-size: 25px
 
 @media screen and (max-width: 991px)
     .company-card
@@ -265,14 +277,28 @@ h2
                 width: 30rem
                 margin-left: 1rem
                 display: flex   
+
+    .back-button
+        float: none
+        text-align: center
 //==============================================================Motor step 3==============================================================
 .step3-form
     padding-top: 50px
     padding-bottom: 80px
 
 .order-card
-    background-color: #ededed40
     font-size: 20px
+    thead
+        tr
+            th
+                border: 0px
+    tbody
+        background-color: #ededed2b
+        border: 1px solid #5cb85c69
+        tr
+            th, td
+                padding-left: 25px
+                border: 0px
 
 .customer-info
     .form-group
@@ -280,7 +306,7 @@ h2
 .info-title
     text-align: center
     font-family: 'Sunflower', sans-serif
-    font-size: 30px
+    font-size: 35px
 
 .card-title
     font-size: 20px
@@ -291,11 +317,20 @@ h2
 .form-control
     border-radius: 0px
 
-.checkbox
-    input
-        top: 0
-        left: 10px
-        zoom: 2
+.custom-checkbox
+    label
+        font-size: 18px
+        margin-top: 1rem
+    #success
+        height: 20px
+        width: 20px
+        margin-right: 10px
+
+.back-button
+    margin-top: 2rem
+    margin-bottom: 4rem
+    button
+        font-size: 25px
 
 .buttons
     display: flex
@@ -310,6 +345,7 @@ h2
     button
         font-size: 25px
 
+
 @media screen and (max-width: 500px)
     .customer-info
         .form-group
@@ -323,6 +359,11 @@ h2
 
     .step3-warning-button
         text-align: center
+    .order-card
+        tbody
+            tr
+                th, td
+                    padding-left: 5px
 
 @media screen and (max-width: 320px)
     .buttons
@@ -334,39 +375,101 @@ h2
     padding:
         top: 40px
         bottom: 70px
-    
-.customer-info
-    .form-group
-        label
-            text-align: left
-#pas-series
-    width: 15%
+    input
+        border: 1px solid #ccc
 
 .contact-info
-    .form-group>div
+    .field-section
         display: flex
         align-items: center
+        margin:
+            top: 10px
+            bottom: 10px
+        .field-name
+            display: flex
+            width: 25rem
+            label
+                font-family: 'Nunito', sans-serif
+                font-size: 25px
+                font-weight: 300
+        .field
+            font-size: 20px
+            display: flex
+            #pass-series
+                width: 10rem
+            #pass-number
+                width: 20rem
+            input
+                width: 30rem
+                padding: 6px 12px
+    .sep-info
+        font-size: 30px
+        font-family: 'Sunflower', sans-serif
+    .house
+        #house-label
+            width: 25rem
+            padding-left: 0rem
+        .field-name
+            width: 8rem
+            padding-left: 2rem
+        .field
+            input
+                width: 11rem
+                
 
-    form
-        .form-group > div
-            margin: 15px 0 15px 0
-
-    label
-        width: 40%
-        margin-right: 20px
-
+.step4-buttons
+    margin-top: 2rem
+    margin
+    text-align: center
     button
-        border-radius: 0px
+        width: 20rem
+        font-weight: 700
 
-    input
-        width: 100%
-        border: 1px solid #000000
-    
+
+@media screen and (max-width: 768px)
+    .contact-info
+        form
+            padding-left: 8.5rem
+
+@media screen and (max-width: 500px)
+    .contact-info
+        form
+            padding-left: 0rem
+        .field-section
+            flex-direction: column
+            .field-name
+                width: auto
+        .sep-info
+            text-align: center
+        .house
+            #house-label
+                width: auto
+            .field-name
+                width: auto
+                padding-left: 0rem
+            .field
+                input
+                    width: 11rem
+    .step4-buttons
+        .btn-success
+            margin-bottom: 3rem
+
 //==============================================================Motor modal window==============================================================
 .modal-button-succes
     float: right
 .modal-card
-    background-color: #ededed
+    font-size: 20px
+    thead
+        tr
+            th
+                border: 0px
+    tbody
+        background-color: #ededed2b
+        border: 1px solid #5cb85c69
+        tr
+            th, td
+                padding-left: 25px
+                border: 0px
 .modal-content
     padding: 15px
 .start-date

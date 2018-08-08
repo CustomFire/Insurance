@@ -147,6 +147,7 @@ h2 {
 }
 
 .company-card .company-logo-name {
+  cursor: pointer;
   display: flex;
   align-items: center;
 }
@@ -163,10 +164,16 @@ h2 {
 }
 
 .company-card .company-rate {
+  cursor: pointer;
   display: flex;
 }
 
+.company-card .company-rate .checked:hover {
+  color: gold;
+}
+
 .company-card .company-price-buy {
+  cursor: pointer;
   text-align: center;
   display: flex;
   align-items: center;
@@ -229,13 +236,21 @@ h2 {
   height: 40px;
 }
 
+.calculation-form select {
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
 .calculate-button {
   text-align: right;
 }
 
 .calculate-button button {
   background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
-  font-size: 20px;
+  font-size: 25px;
 }
 
 @media screen and (max-width: 991px) {
@@ -296,6 +311,10 @@ h2 {
     margin-left: 1rem;
     display: flex;
   }
+  .back-button {
+    float: none;
+    text-align: center;
+  }
 }
 
 .step3-form {
@@ -304,8 +323,21 @@ h2 {
 }
 
 .order-card {
-  background-color: #ededed40;
   font-size: 20px;
+}
+
+.order-card thead tr th {
+  border: 0px;
+}
+
+.order-card tbody {
+  background-color: #ededed2b;
+  border: 1px solid #5cb85c69;
+}
+
+.order-card tbody tr th, .order-card tbody tr td {
+  padding-left: 25px;
+  border: 0px;
 }
 
 .customer-info .form-group {
@@ -315,7 +347,7 @@ h2 {
 .info-title {
   text-align: center;
   font-family: 'Sunflower', sans-serif;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .card-title {
@@ -330,10 +362,24 @@ h2 {
   border-radius: 0px;
 }
 
-.checkbox input {
-  top: 0;
-  left: 10px;
-  zoom: 2;
+.custom-checkbox label {
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+.custom-checkbox #success {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.back-button {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.back-button button {
+  font-size: 25px;
 }
 
 .buttons {
@@ -367,6 +413,9 @@ h2 {
   .step3-warning-button {
     text-align: center;
   }
+  .order-card tbody tr th, .order-card tbody tr td {
+    padding-left: 5px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -381,35 +430,107 @@ h2 {
   padding-bottom: 70px;
 }
 
-.customer-info .form-group label {
-  text-align: left;
+.step4-form input {
+  border: 1px solid #ccc;
 }
 
-#pas-series {
-  width: 15%;
-}
-
-.contact-info .form-group > div {
+.contact-info .field-section {
   display: flex;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.contact-info form .form-group > div {
-  margin: 15px 0 15px 0;
+.contact-info .field-section .field-name {
+  display: flex;
+  width: 25rem;
 }
 
-.contact-info label {
-  width: 40%;
-  margin-right: 20px;
+.contact-info .field-section .field-name label {
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
 }
 
-.contact-info button {
-  border-radius: 0px;
+.contact-info .field-section .field {
+  font-size: 20px;
+  display: flex;
 }
 
-.contact-info input {
-  width: 100%;
-  border: 1px solid #000000;
+.contact-info .field-section .field #pass-series {
+  width: 10rem;
+}
+
+.contact-info .field-section .field #pass-number {
+  width: 20rem;
+}
+
+.contact-info .field-section .field input {
+  width: 30rem;
+  padding: 6px 12px;
+}
+
+.contact-info .sep-info {
+  font-size: 30px;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.contact-info .house #house-label {
+  width: 25rem;
+  padding-left: 0rem;
+}
+
+.contact-info .house .field-name {
+  width: 8rem;
+  padding-left: 2rem;
+}
+
+.contact-info .house .field input {
+  width: 11rem;
+}
+
+.step4-buttons {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.step4-buttons button {
+  width: 20rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-info form {
+    padding-left: 8.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-info form {
+    padding-left: 0rem;
+  }
+  .contact-info .field-section {
+    flex-direction: column;
+  }
+  .contact-info .field-section .field-name {
+    width: auto;
+  }
+  .contact-info .sep-info {
+    text-align: center;
+  }
+  .contact-info .house #house-label {
+    width: auto;
+  }
+  .contact-info .house .field-name {
+    width: auto;
+    padding-left: 0rem;
+  }
+  .contact-info .house .field input {
+    width: 11rem;
+  }
+  .step4-buttons .btn-success {
+    margin-bottom: 3rem;
+  }
 }
 
 .modal-button-succes {
@@ -417,7 +538,21 @@ h2 {
 }
 
 .modal-card {
-  background-color: #ededed;
+  font-size: 20px;
+}
+
+.modal-card thead tr th {
+  border: 0px;
+}
+
+.modal-card tbody {
+  background-color: #ededed2b;
+  border: 1px solid #5cb85c69;
+}
+
+.modal-card tbody tr th, .modal-card tbody tr td {
+  padding-left: 25px;
+  border: 0px;
 }
 
 .modal-content {
