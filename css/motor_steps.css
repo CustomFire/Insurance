@@ -266,8 +266,9 @@ h2 {
     font-size: 4rem;
   }
   .company-card .company-price-buy .buy {
-    margin-top: 1rem;
+    margin-top: 4rem;
     margin-left: 0rem;
+    margin-bottom: 1rem;
   }
   .company-card .company-price-buy .buy button {
     width: 30rem;
@@ -310,6 +311,9 @@ h2 {
     width: 30rem;
     margin-left: 1rem;
     display: flex;
+  }
+  .company-card .company-price-buy .buy button {
+    width: 27rem;
   }
   .back-button {
     float: none;
