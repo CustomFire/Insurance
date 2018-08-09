@@ -5,10 +5,117 @@
 h2
     font-family: "Sunflower", sans-serif
 
+.tab-pane
+    padding: 15px
+//==============================TAB 2 CONTENT=================================================
+
+.tab-2-title
+    font-family: 'Sunflower', sans-serif
+    font-size: 25px
+.tab-content
+    margin-bottom: 4rem
+
+//----------------------------CHOOSE PARAMETRS----------------------------
+.chose-parametrs
+    display: flex
+    align-items: center
+    justify-content: space-around
+    padding-bottom: 1rem
+    border-bottom: 2px solid #fbf9f9
+    .type-value
+        font-family: 'Nunito', sans-serif
+
+        .type
+            font-size: 20px
+
+        .value
+            font-size: 17px
+            font-style: italic
+            input
+                width: 9rem
+
+    .validity
+        display: flex
+        align-items: center
+        font-family: 'Nunito', sans-serif
+        .validity-period
+            font-size: 20px
+        .period-value
+            font-size: 20px
+
+.chose-sort
+    display: flex
+    margin-top: 5px
+    align-items: center
+    margin-bottom: 2rem
+    .sort-title
+        font-size: 20px
+    .sort-rating, .sort-price
+        display: flex
+        font-size: 15px
+        text-align: center
+        margin-left: 3rem
+        .sort-buttons
+            margin-left: 1rem
+
+.company-card
+    padding: 1rem
+    background-color: #fbf9f9b8
+    width: 100%
+    margin-bottom: 15px
+    font-size: 30px
+    display: flex
+    justify-content: space-around
+    align-items: center
+    .company-logo-name
+        cursor: pointer
+        display: flex
+        align-items: center
+        .logo
+            img
+                height: 70px
+                width: 70px
+        .name
+            font-size: 18px
+            color: #565656
+            width: 30rem
+            margin-left: 2rem
+            display: flex
+
+    .company-rate
+        cursor: pointer
+        display: flex
+        .checked
+            &:hover
+                color: gold
+
+    .company-price-buy
+        text-align: center
+        display: flex
+        align-items: center
+        .price-view
+            a
+                display: block
+                font-size: 20px
+        .buy
+            margin-left: 2rem
+            .btn-lg
+                font-size: 30px
+
+
+
+//==============================TAB 2 CONTENT=================================================
+//==============================TAB 3 CONTENT AND BEFORE TRAVEL CONTENT=======================
 .travel
     padding:
         top: 3rem
         bottom: 5rem
+
+.travel-title
+    text-align: center
+    font-family: 'Sunflower', sans-serif
+    text-transform: uppercase
+    margin-bottom: 30px
 
 .step3-form
     padding-top: 50px
@@ -52,12 +159,14 @@ h2
 
 .custom-checkbox
     label
-        font-size: 18px
+        font-size: 14px
+        font-weight: 300
         margin-top: 1rem
     #success
-        height: 20px
+        position: relative
+        top: 3px
+        height: 14px
         width: 20px
-        margin-right: 10px
 
 .back-button
     margin-top: 2rem
@@ -122,7 +231,11 @@ h2
 
 .form-control
     border-radius: 0px
-//==============================TAB CONTENT==============================
+
+.card-wrapper
+    background-color: #fbf9f9b8
+    padding-top: 30px
+    padding-bottom: 10px
 .tab-pane
     padding:
         top: 15px

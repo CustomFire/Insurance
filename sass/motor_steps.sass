@@ -127,6 +127,8 @@ h2
 
 //------------------------TRAVEL------------------------    
 //============================================================== Motor step 2==============================================================
+label
+    margin-bottom: 0px
 .page-title
     padding-top: 30px
     padding-bottom: 14px
@@ -136,7 +138,7 @@ h2
 
 .company-card
     padding: 1rem
-    background-color: #e0e0e02b
+    background-color: #fbf9f9b8
     width: 100%
     margin-bottom: 15px
     font-size: 30px
@@ -152,6 +154,8 @@ h2
                 height: 70px
                 width: 70px
         .name
+            font-size: 18px
+            color: #565656
             width: 30rem
             margin-left: 2rem
             display: flex
@@ -164,7 +168,6 @@ h2
                 color: gold
 
     .company-price-buy
-        cursor: pointer
         text-align: center
         display: flex
         align-items: center
@@ -229,6 +232,7 @@ h2
 
 @media screen and (max-width: 991px)
     .company-card
+        margin-bottom: 40px
         .company-logo-name
             .name
                 width: 13rem
@@ -242,7 +246,6 @@ h2
             .buy
                 margin-top: 4rem
                 margin-left: 0rem
-                margin-bottom: 1rem
                 button
                     width: 30rem
     .form1, .form2
@@ -297,8 +300,11 @@ h2
         tr
             th
                 border: 0px
+                font-family: 'Sunflower', sans-serif
+                font-size: 30px
+                font-weight: 300
     tbody
-        background-color: #ededed2b
+        background-color: #fbf9f9b8
         border: 1px solid #5cb85c69
         tr
             th, td
@@ -336,6 +342,12 @@ h2
     margin-bottom: 4rem
     button
         font-size: 25px
+    .btn-warning
+        background-color: #689cffba
+        transition-delay: 0.1s
+        border: 0px
+        &:hover
+            background-color: #689cff
 
 .buttons
     display: flex
@@ -365,6 +377,7 @@ h2
     .step3-warning-button
         text-align: center
     .order-card
+        margin-bottom: 50px
         tbody
             tr
                 th, td
@@ -395,20 +408,32 @@ h2
             width: 25rem
             label
                 font-family: 'Nunito', sans-serif
-                font-size: 25px
+                font-size: 19px
                 font-weight: 300
+                color: #00000085
         .field
-            font-size: 20px
+            font-size: 19px
             display: flex
+            font-style: italic
+            font-weight: 300
             #pass-series
-                width: 10rem
+                width: 9rem
+                margin-right: 1rem
             #pass-number
                 width: 20rem
-            input
+            >input
                 width: 30rem
                 padding: 6px 12px
+            select
+                width: 9.3rem
+                margin-right: 1rem
+                &:last-child
+                    margin-right: 0rem
     .sep-info
-        font-size: 30px
+        font-size: 27px
+        text-align: center
+        margin-top: 3rem
+        margin-bottom: 3rem
         font-family: 'Sunflower', sans-serif
     .house
         #house-label
@@ -416,7 +441,7 @@ h2
             padding-left: 0rem
         .field-name
             width: 8rem
-            padding-left: 2rem
+            padding-left: 3rem
         .field
             input
                 width: 11rem
@@ -427,8 +452,15 @@ h2
     margin
     text-align: center
     button
+        font-size: 25px
         width: 20rem
         font-weight: 700
+    .btn-warning
+        background-color: #689cffba
+        transition-delay: 0.1s
+        border: 0px
+        &:hover
+            background-color: #689cff
 
 
 @media screen and (max-width: 768px)
@@ -468,8 +500,11 @@ h2
         tr
             th
                 border: 0px
+                font-family: 'Sunflower', sans-serif
+                font-size: 30px
+                font-weight: 300
     tbody
-        background-color: #ededed2b
+        background-color: #fbf9f9b8
         border: 1px solid #5cb85c69
         tr
             th, td

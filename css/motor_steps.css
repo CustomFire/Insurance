@@ -126,6 +126,10 @@ h2 {
   font-size: 13px;
 }
 
+label {
+  margin-bottom: 0px;
+}
+
 .page-title {
   padding-top: 30px;
   padding-bottom: 14px;
@@ -137,7 +141,7 @@ h2 {
 
 .company-card {
   padding: 1rem;
-  background-color: #e0e0e02b;
+  background-color: #fbf9f9b8;
   width: 100%;
   margin-bottom: 15px;
   font-size: 30px;
@@ -158,6 +162,8 @@ h2 {
 }
 
 .company-card .company-logo-name .name {
+  font-size: 18px;
+  color: #565656;
   width: 30rem;
   margin-left: 2rem;
   display: flex;
@@ -173,7 +179,6 @@ h2 {
 }
 
 .company-card .company-price-buy {
-  cursor: pointer;
   text-align: center;
   display: flex;
   align-items: center;
@@ -254,6 +259,9 @@ h2 {
 }
 
 @media screen and (max-width: 991px) {
+  .company-card {
+    margin-bottom: 40px;
+  }
   .company-card .company-logo-name .name {
     width: 13rem;
     margin-left: 1rem;
@@ -268,7 +276,6 @@ h2 {
   .company-card .company-price-buy .buy {
     margin-top: 4rem;
     margin-left: 0rem;
-    margin-bottom: 1rem;
   }
   .company-card .company-price-buy .buy button {
     width: 30rem;
@@ -332,10 +339,13 @@ h2 {
 
 .order-card thead tr th {
   border: 0px;
+  font-family: 'Sunflower', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
 }
 
 .order-card tbody {
-  background-color: #ededed2b;
+  background-color: #fbf9f9b8;
   border: 1px solid #5cb85c69;
 }
 
@@ -386,6 +396,16 @@ h2 {
   font-size: 25px;
 }
 
+.back-button .btn-warning {
+  background-color: #689cffba;
+  transition-delay: 0.1s;
+  border: 0px;
+}
+
+.back-button .btn-warning:hover {
+  background-color: #689cff;
+}
+
 .buttons {
   display: flex;
   justify-content: space-around;
@@ -416,6 +436,9 @@ h2 {
   }
   .step3-warning-button {
     text-align: center;
+  }
+  .order-card {
+    margin-bottom: 50px;
   }
   .order-card tbody tr th, .order-card tbody tr td {
     padding-left: 5px;
@@ -452,30 +475,46 @@ h2 {
 
 .contact-info .field-section .field-name label {
   font-family: 'Nunito', sans-serif;
-  font-size: 25px;
+  font-size: 19px;
   font-weight: 300;
+  color: #00000085;
 }
 
 .contact-info .field-section .field {
-  font-size: 20px;
+  font-size: 19px;
   display: flex;
+  font-style: italic;
+  font-weight: 300;
 }
 
 .contact-info .field-section .field #pass-series {
-  width: 10rem;
+  width: 9rem;
+  margin-right: 1rem;
 }
 
 .contact-info .field-section .field #pass-number {
   width: 20rem;
 }
 
-.contact-info .field-section .field input {
+.contact-info .field-section .field > input {
   width: 30rem;
   padding: 6px 12px;
 }
 
+.contact-info .field-section .field select {
+  width: 9.3rem;
+  margin-right: 1rem;
+}
+
+.contact-info .field-section .field select:last-child {
+  margin-right: 0rem;
+}
+
 .contact-info .sep-info {
-  font-size: 30px;
+  font-size: 27px;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   font-family: 'Sunflower', sans-serif;
 }
 
@@ -486,7 +525,7 @@ h2 {
 
 .contact-info .house .field-name {
   width: 8rem;
-  padding-left: 2rem;
+  padding-left: 3rem;
 }
 
 .contact-info .house .field input {
@@ -499,8 +538,19 @@ h2 {
 }
 
 .step4-buttons button {
+  font-size: 25px;
   width: 20rem;
   font-weight: 700;
+}
+
+.step4-buttons .btn-warning {
+  background-color: #689cffba;
+  transition-delay: 0.1s;
+  border: 0px;
+}
+
+.step4-buttons .btn-warning:hover {
+  background-color: #689cff;
 }
 
 @media screen and (max-width: 768px) {
@@ -547,10 +597,13 @@ h2 {
 
 .modal-card thead tr th {
   border: 0px;
+  font-family: 'Sunflower', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
 }
 
 .modal-card tbody {
-  background-color: #ededed2b;
+  background-color: #fbf9f9b8;
   border: 1px solid #5cb85c69;
 }
 

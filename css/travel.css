@@ -7,9 +7,148 @@ h2 {
   font-family: "Sunflower", sans-serif;
 }
 
+.tab-pane {
+  padding: 15px;
+}
+
+.tab-2-title {
+  font-family: 'Sunflower', sans-serif;
+  font-size: 25px;
+}
+
+.tab-content {
+  margin-bottom: 4rem;
+}
+
+.chose-parametrs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #fbf9f9;
+}
+
+.chose-parametrs .type-value {
+  font-family: 'Nunito', sans-serif;
+}
+
+.chose-parametrs .type-value .type {
+  font-size: 20px;
+}
+
+.chose-parametrs .type-value .value {
+  font-size: 17px;
+  font-style: italic;
+}
+
+.chose-parametrs .type-value .value input {
+  width: 9rem;
+}
+
+.chose-parametrs .validity {
+  display: flex;
+  align-items: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.chose-parametrs .validity .validity-period {
+  font-size: 20px;
+}
+
+.chose-parametrs .validity .period-value {
+  font-size: 20px;
+}
+
+.chose-sort {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.chose-sort .sort-title {
+  font-size: 20px;
+}
+
+.chose-sort .sort-rating, .chose-sort .sort-price {
+  display: flex;
+  font-size: 15px;
+  text-align: center;
+  margin-left: 3rem;
+}
+
+.chose-sort .sort-rating .sort-buttons, .chose-sort .sort-price .sort-buttons {
+  margin-left: 1rem;
+}
+
+.company-card {
+  padding: 1rem;
+  background-color: #fbf9f9b8;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.company-card .company-logo-name {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.company-card .company-logo-name .logo img {
+  height: 70px;
+  width: 70px;
+}
+
+.company-card .company-logo-name .name {
+  font-size: 18px;
+  color: #565656;
+  width: 30rem;
+  margin-left: 2rem;
+  display: flex;
+}
+
+.company-card .company-rate {
+  cursor: pointer;
+  display: flex;
+}
+
+.company-card .company-rate .checked:hover {
+  color: gold;
+}
+
+.company-card .company-price-buy {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.company-card .company-price-buy .price-view a {
+  display: block;
+  font-size: 20px;
+}
+
+.company-card .company-price-buy .buy {
+  margin-left: 2rem;
+}
+
+.company-card .company-price-buy .buy .btn-lg {
+  font-size: 30px;
+}
+
 .travel {
   padding-top: 3rem;
   padding-bottom: 5rem;
+}
+
+.travel-title {
+  text-align: center;
+  font-family: 'Sunflower', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .step3-form {
@@ -63,14 +202,16 @@ h2 {
 }
 
 .custom-checkbox label {
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: 300;
   margin-top: 1rem;
 }
 
 .custom-checkbox #success {
-  height: 20px;
+  position: relative;
+  top: 3px;
+  height: 14px;
   width: 20px;
-  margin-right: 10px;
 }
 
 .back-button {
@@ -147,6 +288,12 @@ h2 {
 
 .form-control {
   border-radius: 0px;
+}
+
+.card-wrapper {
+  background-color: #fbf9f9b8;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .tab-pane {

@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../../Insurance/bootstrap-3.3.2-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/travel.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,170 +14,375 @@
 </head>
 <body>
     <div class="travel">
-        <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <!-- Nav tabs -->
-                <ul id="tabs" class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#step1" role="tab" data-toggle="tab">Step 1</a></li>
-                    <li role="presentation"><a href="#step2" role="tab" data-toggle="tab">Step 2</a></li>
-                    <li role="presentation"><a href="#step3" role="tab" data-toggle="tab">Step 3</a></li>
-                </ul>
-                
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane fade in active" id="step1">
-                        <div class="container">
-
-                        </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="step2">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="chose">
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="step3">
-                            <div class="row tab-content-3">
-                                <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <div class="order-card">
-                                        <div class="card-titles">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">You order:</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th>Type:</th>
-                                                        <td>Motor liability</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Company:</th>
-                                                        <td>UPSK</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Limit coverage:</th>
-                                                        <td>$30 000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Francise:</th>
-                                                        <td>$100</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Validity:</th>
-                                                        <td>12 month</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Total:</th>
-                                                        <td>1400 UAH</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <div class="customer-info">
-                                        <div class="info-title">
-                                            Enter contact information
-                                        </div>
-                                        <form class="form-horizontal" role="form">
-                                            <div class="form-group">
-                                                <label for="car-number">Full name</label>
-                                                <input type="text" class="form-control" id="car-number" placeholder="Full name">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="car-number">Email</label>
-                                                <input type="text" class="form-control" id="car-number" placeholder="Email">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="car-number">Phone</label>
-                                                <input type="text" class="form-control" id="car-number" placeholder="+(380)-...
-                                                ">
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="custom-checkbox">
-                                                    <label for="success"><input type="checkbox" id="success" unchecked/>I agree with conditions for processing personal data</label>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-12">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6 col-md-push-6 col-md-6">
-                                            <div class="buttons">
-                                                <button type="submit" class="btn btn-lg btn-success">Buy online</button>
-                                                <button type="submit" class="btn btn-lg btn-success">Buy 1 cklick</button>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6 col-md-pull-6 col-md-6">
-                                            <div class="back-button">
-                                                <button type="button" class="btn btn-warning btn-lg">Back</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
+        <div class="tab-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="travel-title">
-                            <h2>Why every tourist should have insurance before travel</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <!-- <img src="http://via.placeholder.com/200x200&text=Title" class="img-circle"> -->
-                            <div class="card-img"></div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, quas.</p> 
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <!-- <img src="http://via.placeholder.com/200x200&text=Title" class="img-circle"> -->
-                            <div class="card-img"></div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, quas.</p> 
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <!-- <img src="http://via.placeholder.com/200x200&text=Title" class="img-circle"> -->
-                            <div class="card-img"></div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, quas.</p> 
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <!-- <img src="http://via.placeholder.com/200x200&text=Title" class="img-circle"> -->
-                            <div class="card-img"></div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, quas.</p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="travel-text">
-                            <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ab laudantium assumenda dolorum sint? Accusamus officia, enim, iusto quasi amet praesentium pariatur asperiores illo consequatur fugiat fuga sapiente blanditiis impedit nisi, distinctio quod eum necessitatibus vero deleniti recusandae ab est. Molestiae sed, at provident optio molestias libero, aliquam ipsam iste vel dolorum magnam odit nihil ab veniam fuga voluptatum. Amet quae fugit, quasi reiciendis distinctio itaque, deleniti nobis quos accusantium inventore accusamus a, officia saepe velit dolor nemo. Sapiente veritatis beatae modi quaerat eius voluptatem id, et in molestias minima earum tenetur quae sunt doloribus rem expedita repellendus sed distinctio eos alias. Sapiente impedit voluptatum consectetur quam perspiciatis veritatis sunt assumenda. Ratione maxime cupiditate aut mollitia magnam, deserunt beatae similique reiciendis provident corporis consectetur nemo pariatur atque, excepturi sed alias odit aspernatur non ipsum aperiam possimus laudantium quis placeat? Quae officia, ipsam quidem provident ut molestiae et, voluptatem, optio iure sapiente laudantium a eligendi magnam? In voluptate perspiciatis, rem odit quod sequi atque, earum accusantium facilis quis ea omnis enim explicabo cumque culpa, architecto magni odio voluptates nesciunt pariatur asperiores iusto. Id quod culpa minus fugit deleniti quisquam praesentium alias reiciendis quidem in temporibus voluptate eos placeat itaque, recusandae modi odit maxime laborum debitis dolorem inventore impedit. Eius voluptatum ipsam eum nam quod labore reprehenderit exercitationem voluptate? Commodi, excepturi in nam sed magni, cupiditate earum ea, facilis quasi reprehenderit dolore. Nisi ad deleniti minus laboriosam, repellat, vel possimus nostrum vitae tempore blanditiis optio totam earum aliquam laborum labore eveniet. Ut temporibus, doloribus porro sequi accusamus blanditiis? Fugiat, deserunt impedit mollitia tempora illo veniam. Eligendi dolore, quia labore fugiat non molestias unde, laboriosam magni necessitatibus autem similique soluta asperiores repellendus atque nostrum numquam odio veritatis accusantium sed iure laudantium architecto commodi. Quo non alias qui officiis aperiam, perferendis dicta fugit nulla, dolore autem nostrum quidem repellendus pariatur ab mollitia ipsam tenetur, dignissimos eligendi quos est. Voluptate dolorem possimus exercitationem ipsam et nostrum libero, tenetur perferendis neque aperiam. Magnam molestias vero odio voluptatibus fugiat necessitatibus omnis doloribus! Maxime voluptatum nemo quaerat quos rerum iusto quod alias, accusantium magni maiores placeat est, incidunt reiciendis et quis! Earum suscipit, repudiandae quisquam, hic dolor qui corporis, ab aspernatur omnis odit ullam. Aspernatur corporis voluptatum reiciendis sequi voluptatibus minus distinctio veniam sed, iure ullam itaque dolore, vero nulla, odit dolor? Quidem atque vero cum maiores perferendis, ut rem asperiores consequatur esse exercitationem architecto nisi odio quam recusandae ex magni aspernatur fuga sint. Veniam magnam neque temporibus tenetur incidunt corrupti veritatis iste? Inventore numquam consequatur quasi aspernatur error cupiditate suscipit doloremque fuga, reiciendis rem laudantium libero quam deserunt quo voluptate facere ratione optio. Temporibus eaque suscipit itaque neque optio quis nisi laborum officiis facere quibusdam aperiam quia nemo voluptates perferendis dolores sed, expedita, nulla tenetur at maxime doloribus! Nihil mollitia esse ullam? Voluptatum modi quae animi quam esse blanditiis facilis, illum corporis sequi atque voluptatem quia sunt, nihil nostrum. Adipisci cumque repellendus dolorum repellat qui, ad accusamus eius, amet reprehenderit nostrum perspiciatis ipsa atque quidem labore laudantium!</p>
+                        <!-- Nav tabs -->
+                        <ul id="tabs" class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#step1" role="tab" data-toggle="tab">Step 1</a></li>
+                            <li role="presentation"><a href="#step2" role="tab" data-toggle="tab">Step 2</a></li>
+                            <li role="presentation"><a href="#step3" role="tab" data-toggle="tab">Step 3</a></li>
+                        </ul>
+                        
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade in active" id="step1">
+                                <div class="">
+                                    
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="step2">
+                                <div class="">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="chose">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="chose-parametrs">
+                                                            <div class="tab-2-title">
+                                                                <span>
+                                                                    You chose:
+                                                                </span>
+                                                            </div>
+                                                            <div class="type-value">
+                                                                <div class="type">
+                                                                    <span>
+                                                                        Coverage area:
+                                                                    </span>
+                                                                </div>
+                                                                <div class="value">
+                                                                    <span>
+                                                                        somearea
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="type-value">
+                                                                <div class="type">
+                                                                    <span>
+                                                                        Limit coverage:
+                                                                    </span>
+                                                                </div>
+                                                                <div class="value">
+                                                                    <span>
+                                                                        $1000
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="type-value">
+                                                                <div class="type">
+                                                                    <span>
+                                                                        Trip type:
+                                                                    </span>
+                                                                </div>
+                                                                <div class="value">
+                                                                    <span>
+                                                                        sometype
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="type-value">
+                                                                <div class="type">
+                                                                    <span>
+                                                                        Parcipans:
+                                                                    </span>
+                                                                </div>
+                                                                <div class="value">
+                                                                    <span>
+                                                                    someparcipans
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="type-value">
+                                                                <div class="type">
+                                                                    <span>
+                                                                        Period of validity:
+                                                                    </span>
+                                                                </div>
+                                                                <div class="value">
+                                                                    <input type="text">
+                                                                    <span>-</span>
+                                                                    <input type="text">
+                                                                </div>
+                                                            </div>
+                                                            <div class="validity">
+                                                                <div class="validity-period">
+                                                                    <span>
+                                                                        Validity (days):
+                                                                    </span>
+                                                                </div>
+                                                                <div class="period-value">
+                                                                    <span>
+                                                                        10
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="chose-sort">
+                                                            <div class="sort-title">
+                                                                <span>Sort by:</span>
+                                                            </div>
+                                                            <div class="sort-rating">
+                                                                <span>Rating:</span>
+                                                                <div class="sort-buttons">
+                                                                    <button><i class="fas fa-arrow-up"></i></button>
+                                                                    <button><i class="fas fa-arrow-down"></i></button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="sort-price">
+                                                                <span>Price:</span>
+                                                                <div class="sort-buttons">
+                                                                    <button><i class="fas fa-arrow-up"></i></button>
+                                                                    <button><i class="fas fa-arrow-down"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="chose-cards">
+                                                            <div class="company-card">
+                                                                <div class="company-logo-name">
+                                                                    <div class="logo">
+                                                                        <img src="https://finscanner.ua/uploads/companies/4f/18/list-580e0cea-99ea1dcc.png" alt="company logo">
+                                                                    </div>
+                                                                    <div class="name">
+                                                                        <span>Macintosh</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="company-rate">
+                                                                    <div class="stars">
+                                                                        <span class="fa fa-star checked"></span>
+                                                                        <span class="fa fa-star checked"></span>
+                                                                        <span class="fa fa-star checked"></span>
+                                                                        <span class="fa fa-star checked"></span>
+                                                                        <span class="fa fa-star checked"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="company-price-buy">
+                                                                    <div class="price-view">
+                                                                        <div class="price">
+                                                                            100₴
+                                                                        </div>
+                                                                        <a href="">view more</a>
+                                                                    </div>
+                                                                    <div class="buy">
+                                                                        <button class="btn btn-lg btn-success">Buy</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="company-card">
+                                                                <div class="company-logo-name">
+                                                                    <div class="logo">
+                                                                        <img src="https://finscanner.ua/uploads/companies/7c/c1/list-580e0e7e-b0fa0d5a.jpg" alt="company logo">
+                                                                    </div>
+                                                                    <div class="name">
+                                                                            <span>Macintosh Macintosh</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="company-rate">
+                                                                    <div class="stars">
+                                                                        <span class="fa fa-star checked"></span>
+                                                                        <span class="fa fa-star checked"></span>
+                                                                        <span class="fa fa-star checked"></span>
+                                                                        <span class="fa fa-star checked"></span>
+                                                                        <span class="fa fa-star checked"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="company-price-buy">
+                                                                    <div class="price-view">
+                                                                        <div class="price">
+                                                                            100₴
+                                                                        </div>
+                                                                        <a href="">view more</a>
+                                                                    </div>
+                                                                    <div class="buy">
+                                                                        <button class="btn btn-lg btn-success">Buy</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="company-card">
+                                                                <div class="company-logo-name">
+                                                                    <div class="logo">
+                                                                        <img src="https://finscanner.ua/uploads/companies/76/18/list-580e0d11-c40452bb.png" alt="company logo">
+                                                                    </div>
+                                                                    <div class="name">
+                                                                        <span>Macintosh Macintosh Macintosh</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="company-rate">
+                                                                    <div class="stars">
+                                                                        <span class="fa fa-star checked"></span>
+                                                                        <span class="fa fa-star checked"></span>
+                                                                        <span class="fa fa-star checked"></span>
+                                                                        <span class="fa fa-star checked"></span>
+                                                                        <span class="fa fa-star checked"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="company-price-buy">
+                                                                    <div class="price-view">
+                                                                        <div class="price">
+                                                                            100₴
+                                                                        </div>
+                                                                        <a href="">view more</a>
+                                                                    </div>
+                                                                    <div class="buy">
+                                                                        <button class="btn btn-lg btn-success">Buy</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="step3">
+                                <div class="row tab-content-3">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="order-card">
+                                            <div class="card-titles">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">You order:</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Type:</th>
+                                                            <td>Motor liability</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Company:</th>
+                                                            <td>UPSK</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Limit coverage:</th>
+                                                            <td>$30 000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Francise:</th>
+                                                            <td>$100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Validity:</th>
+                                                            <td>12 month</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Total:</th>
+                                                            <td>1400 UAH</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="customer-info">
+                                            <div class="info-title">
+                                                Enter contact information
+                                            </div>
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <label for="car-number">Full name</label>
+                                                    <input type="text" class="form-control" id="car-number" placeholder="Full name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="car-number">Email</label>
+                                                    <input type="text" class="form-control" id="car-number" placeholder="Email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="car-number">Phone</label>
+                                                    <input type="text" class="form-control" id="car-number" placeholder="+(380)-...
+                                                    ">
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-checkbox">
+                                                        <label for="success"><input type="checkbox" id="success" unchecked/>I agree with conditions for processing personal data</label>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-push-6 col-md-6">
+                                                <div class="buttons">
+                                                    <button type="submit" class="btn btn-lg btn-success">Buy online</button>
+                                                    <button type="submit" class="btn btn-lg btn-success">Buy 1 cklick</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-pull-6 col-md-6">
+                                                <div class="back-button">
+                                                    <button type="button" class="btn btn-warning btn-lg">Back</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+            <div class="before-travel">
+                <div class="card-wrapper">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="travel-title">
+                                    <h2>Why every tourist should have insurance before travel</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <!-- <img src="http://via.placeholder.com/200x200&text=Title" class="img-circle"> -->
+                                    <div class="card-img"></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, quas.</p> 
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <!-- <img src="http://via.placeholder.com/200x200&text=Title" class="img-circle"> -->
+                                    <div class="card-img"></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, quas.</p> 
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <!-- <img src="http://via.placeholder.com/200x200&text=Title" class="img-circle"> -->
+                                    <div class="card-img"></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, quas.</p> 
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <!-- <img src="http://via.placeholder.com/200x200&text=Title" class="img-circle"> -->
+                                    <div class="card-img"></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, quas.</p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lorem-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="travel-text">
+                                    <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ab laudantium assumenda dolorum sint? Accusamus officia, enim, iusto quasi amet praesentium pariatur asperiores illo consequatur fugiat fuga sapiente blanditiis impedit nisi, distinctio quod eum necessitatibus vero deleniti recusandae ab est. Molestiae sed, at provident optio molestias libero, aliquam ipsam iste vel dolorum magnam odit nihil ab veniam fuga voluptatum. Amet quae fugit, quasi reiciendis distinctio itaque, deleniti nobis quos accusantium inventore accusamus a, officia saepe velit dolor nemo. Sapiente veritatis beatae modi quaerat eius voluptatem id, et in molestias minima earum tenetur quae sunt doloribus rem expedita repellendus sed distinctio eos alias. Sapiente impedit voluptatum consectetur quam perspiciatis veritatis sunt assumenda. Ratione maxime cupiditate aut mollitia magnam, deserunt beatae similique reiciendis provident corporis consectetur nemo pariatur atque, excepturi sed alias odit aspernatur non ipsum aperiam possimus laudantium quis placeat? Quae officia, ipsam quidem provident ut molestiae et, voluptatem, optio iure sapiente laudantium a eligendi magnam? In voluptate perspiciatis, rem odit quod sequi atque, earum accusantium facilis quis ea omnis enim explicabo cumque culpa, architecto magni odio voluptates nesciunt pariatur asperiores iusto. Id quod culpa minus fugit deleniti quisquam praesentium alias reiciendis quidem in temporibus voluptate eos placeat itaque, recusandae modi odit maxime laborum debitis dolorem inventore impedit. Eius voluptatum ipsam eum nam quod labore reprehenderit exercitationem voluptate? Commodi, excepturi in nam sed magni, cupiditate earum ea, facilis quasi reprehenderit dolore. Nisi ad deleniti minus laboriosam, repellat, vel possimus nostrum vitae tempore blanditiis optio totam earum aliquam laborum labore eveniet. Ut temporibus, doloribus porro sequi accusamus blanditiis? Fugiat, deserunt impedit mollitia tempora illo veniam. Eligendi dolore, quia labore fugiat non molestias unde, laboriosam magni necessitatibus autem similique soluta asperiores repellendus atque nostrum numquam odio veritatis accusantium sed iure laudantium architecto commodi. Quo non alias qui officiis aperiam, perferendis dicta fugit nulla, dolore autem nostrum quidem repellendus pariatur ab mollitia ipsam tenetur, dignissimos eligendi quos est. Voluptate dolorem possimus exercitationem ipsam et nostrum libero, tenetur perferendis neque aperiam. Magnam molestias vero odio voluptatibus fugiat necessitatibus omnis doloribus! Maxime voluptatum nemo quaerat quos rerum iusto quod alias, accusantium magni maiores placeat est, incidunt reiciendis et quis! Earum suscipit, repudiandae quisquam, hic dolor qui corporis, ab aspernatur omnis odit ullam. Aspernatur corporis voluptatum reiciendis sequi voluptatibus minus distinctio veniam sed, iure ullam itaque dolore, vero nulla, odit dolor? Quidem atque vero cum maiores perferendis, ut rem asperiores consequatur esse exercitationem architecto nisi odio quam recusandae ex magni aspernatur fuga sint. Veniam magnam neque temporibus tenetur incidunt corrupti veritatis iste? Inventore numquam consequatur quasi aspernatur error cupiditate suscipit doloremque fuga, reiciendis rem laudantium libero quam deserunt quo voluptate facere ratione optio. Temporibus eaque suscipit itaque neque optio quis nisi laborum officiis facere quibusdam aperiam quia nemo voluptates perferendis dolores sed, expedita, nulla tenetur at maxime doloribus! Nihil mollitia esse ullam? Voluptatum modi quae animi quam esse blanditiis facilis, illum corporis sequi atque voluptatem quia sunt, nihil nostrum. Adipisci cumque repellendus dolorum repellat qui, ad accusamus eius, amet reprehenderit nostrum perspiciatis ipsa atque quidem labore laudantium!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
