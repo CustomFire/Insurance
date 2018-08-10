@@ -11,13 +11,83 @@ h2 {
   padding: 15px;
 }
 
-.tab-2-title {
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  color: #555;
+  cursor: default;
+  background-color: #fdfcfc;
+  border: 0px;
+  border-bottom-color: transparent;
+}
+
+.nav-tabs {
+  border-bottom: 0px;
+}
+
+.nav-tabs > li {
+  width: 33.3333333%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  background-color: #f9f9f9;
+  color: #529a52;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+
+.tab-content {
+  border-bottom: 1px solid #c0c0c038;
+  border-right: 1px solid #c0c0c038;
+  border-left: 1px solid #c0c0c038;
+  margin-bottom: 4rem;
+  min-height: 490px;
+}
+
+input {
+  border: 1px solid black;
+}
+
+.tab-step1 {
+  padding: 50px 0px 50px 0px;
+  font-size: 20px;
+}
+
+.tab-step1 .area, .tab-step1 .lim-title {
   font-family: 'Sunflower', sans-serif;
   font-size: 25px;
 }
 
-.tab-content {
-  margin-bottom: 4rem;
+.tab-step1 .lim-sum .limit {
+  margin-bottom: 1rem;
+}
+
+.tab-step1 .coverage-area, .tab-step1 .coverage-limit {
+  text-align: center;
+}
+
+.tab-step1 .coverage-limit {
+  border-left: 1px solid #c0c0c038;
+}
+
+.tab-step1 .step1-button {
+  float: right;
+}
+
+.tab-step2 {
+  font-size: 20px;
+}
+
+.tab-step2 .trip-type .title {
+  font-family: 'Sunflower', sans-serif;
+  font-size: 25px;
+}
+
+.tab-2-title {
+  font-family: 'Sunflower', sans-serif;
+  font-size: 25px;
 }
 
 .chose-parametrs {
@@ -294,14 +364,4 @@ h2 {
   background-color: #fbf9f9b8;
   padding-top: 30px;
   padding-bottom: 10px;
-}
-
-.tab-pane {
-  padding-top: 15px;
-}
-
-.tab-content {
-  border-bottom: 1px solid silver;
-  border-right: 1px solid silver;
-  border-left: 1px solid silver;
 }

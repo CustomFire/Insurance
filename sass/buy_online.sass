@@ -23,3 +23,36 @@
                 display: inline-block
 .window
     border: 1px solid black
+
+.field-section
+    display: flex
+    align-items: center
+    margin:
+        top: 10px
+        bottom: 10px
+    .field-name
+        display: flex
+        width: 25rem
+        label
+            font-family: 'Nunito', sans-serif
+            font-size: 19px
+            font-weight: 300
+            color: #00000085
+    .field
+        font-size: 19px
+        display: flex
+        font-style: italic
+        font-weight: 300
+        #pass-series
+            width: 9rem
+            margin-right: 1rem
+        #pass-number
+            width: 20rem
+        >input
+            width: 30rem
+            padding: 6px 12px
+        select
+            width: 9.3rem
+            margin-right: 1rem
+            &:last-child
+                margin-right: 0rem

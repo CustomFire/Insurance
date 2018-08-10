@@ -7,6 +7,8 @@
    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../Insurance/bootstrap-3.3.2-dist/css/bootstrap.min.css">
+
+
     <link rel="stylesheet" href="../css/motor_steps.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Motor step 2</title>
@@ -174,21 +176,11 @@
                                                                         </select>
                                                                 </div>
                                                                 <div class="form-group">    
-                                                                    <label for="vin-code">Make</label>
-                                                                        <select class="form-control">
-                                                                            <option selected disabled>Year</option>
-                                                                            <option value="2000">2000</option>
-                                                                            <option value="2001">2001</option>
-                                                                            <option value="2002">2002</option>
-                                                                            <option value="2003">2003</option>
-                                                                            <option value="2004">2004</option>
-                                                                            <option value="2005">2005</option>
-                                                                            <option value="2006">2006</option>
-                                                                            <option value="2007">2007</option>
-                                                                        </select>
+                                                                    <label for="">Make</label>
+                                                                    <input type="text" id="datepicker" class="form-control" placeholder="Enter date">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <label for="sity-reg">Type of vehicle</label>
+                                                                    <label for="">Type of vehicle</label>
                                                                         <select class="form-control">
                                                                             <option selected disabled>Type</option>
                                                                             <option value="Motorcycle">Motorcycle</option>
@@ -215,6 +207,22 @@
             </div>
         </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <script>
+    $(function(){
+        $("#datepicker").datepicker({
+            dateFormat: "dd-mm-yy",
+            changeMonth: true,
+            changeYear: true
+        });
+    });
+    </script>
+
+
 
 </body>
 </html>

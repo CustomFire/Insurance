@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../../Insurance/bootstrap-3.3.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/motor_steps.css">
         <link rel="stylesheet" href="../css/travel.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Travel</title>
@@ -27,8 +28,118 @@
                         
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane fade in active" id="step1">
-                                <div class="">
-                                    
+                                <div class="tab-step1">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="coverage-area">
+                                                <div class="area">
+                                                    <span>
+                                                        Coverage area of the insurance policy
+                                                    </span>
+                                                </div>
+                                                <div class="area-list">
+                                                    <input type="text" placeholder="The world">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="coverage-limit">
+                                                <div class="lim-title">
+                                                    <span>
+                                                        Coverage-limit
+                                                    </span>
+                                                </div>
+                                                <div class="lim-sum">
+                                                    <div class="limit">
+                                                        <input type="text" placeholder="1000$">
+                                                    </div>
+                                                    <div class="currency">
+                                                        <input type="text" placeholder="USD">
+                                                    </div>
+                                                </div>
+                                                <div class="limit-view">
+                                                    <span>View <a href="">coverrage limit</a> by country</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="step1-button">
+                                                <button class="btn btn-default btn-lg">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-step2">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="trip-type">
+                                                <div class="title">
+                                                    <span>Type of trip</span>
+                                                </div>
+                                                <div class="types">
+                                                    <input type="text">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="validity">
+                                                <div class="title">
+                                                    <span>Validity</span>
+                                                </div>
+                                                <div class="validity-period">
+                                                    <input type="text">
+                                                    <span>-</span>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="validity-period-days">
+                                                    <span>Validity (days): 0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="buttons">
+                                                <button class="btn btn-warning btn-lg">Back</button>
+                                                <button class="btn btn-default btn-lg">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-step3">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="tourist-card">
+                                                <div class="tourist-name">
+                                                    <span>
+                                                        Name
+                                                    </span>
+                                                </div>
+                                                <div class="tourist-age">
+                                                    <div class="age-label">
+                                                        <span>
+                                                            Age:
+                                                        </span>
+                                                    </div>
+                                                    <div class="age-picker">
+                                                        <input type="number">
+                                                    </div>
+                                                </div>
+                                                <div class="trip-type">
+                                                    <div class="trip-label">
+                                                        <span>
+                                                            Purpose of the trip
+                                                        </span>
+                                                    </div>
+                                                    <div class="trip-drop-down">
+                                                        <input type="text"  >
+                                                    </div>
+                                                </div>
+                                                <div class="add-tourist">
+                                                    <button>+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="step2">
@@ -242,43 +353,43 @@
                             <div role="tabpanel" class="tab-pane fade" id="step3">
                                 <div class="row tab-content-3">
                                     <div class="col-xs-12 col-sm-6 col-md-6">
-                                        <div class="order-card">
-                                            <div class="card-titles">
-                                                <table class="table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">You order:</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>Type:</th>
-                                                            <td>Motor liability</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Company:</th>
-                                                            <td>UPSK</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Limit coverage:</th>
-                                                            <td>$30 000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Francise:</th>
-                                                            <td>$100</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Validity:</th>
-                                                            <td>12 month</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Total:</th>
-                                                            <td>1400 UAH</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                            <div class="order-card">
+                                                <div class="card-titles">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">You order</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Type:</th>
+                                                                <td>Motor liability</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Company:</th>
+                                                                <td>UPSK</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Limit coverage:</th>
+                                                                <td>$30 000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Francise:</th>
+                                                                <td>$100</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Validity:</th>
+                                                                <td>12 month</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Total:</th>
+                                                                <td>1400 UAH</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
-                                        </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-6">
                                         <div class="customer-info">
@@ -286,18 +397,29 @@
                                                 Enter contact information
                                             </div>
                                             <form class="form-horizontal" role="form">
-                                                <div class="form-group">
-                                                    <label for="car-number">Full name</label>
-                                                    <input type="text" class="form-control" id="car-number" placeholder="Full name">
+                                                <div class="field-section">
+                                                    <div class="field-name">
+                                                        <label for="">Full name</label>
+                                                    </div>
+                                                    <div class="field">
+                                                        <input type="text" placeholder="">
+                                                    </div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label for="car-number">Email</label>
-                                                    <input type="text" class="form-control" id="car-number" placeholder="Email">
+                                                <div class="field-section">
+                                                    <div class="field-name">
+                                                        <label for="">Email</label>
+                                                    </div>
+                                                    <div class="field">
+                                                        <input type="text" placeholder="your@email.com">
+                                                    </div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label for="car-number">Phone</label>
-                                                    <input type="text" class="form-control" id="car-number" placeholder="+(380)-...
-                                                    ">
+                                                <div class="field-section">
+                                                    <div class="field-name">
+                                                        <label for="">Phone</label>
+                                                    </div>
+                                                    <div class="field">
+                                                        <input type="text" placeholder="+(380)-00-000-00-00">
+                                                    </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="custom-checkbox">
