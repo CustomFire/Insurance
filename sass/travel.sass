@@ -29,6 +29,7 @@ h2
             color: #529a52
             border: 1px solid transparent
             border-radius: 4px 4px 0 0
+            padding: 10px
 
 .tab-content
     border-bottom: 1px solid #c0c0c038
@@ -36,24 +37,75 @@ h2
     border-left: 1px solid #c0c0c038
     margin-bottom: 4rem
     min-height: 490px
+
+
+
+.tab-step-title
+    display: flex
+    justify-content: space-around
+    align-items: center
+    color: #ddd
+
+    .step-circle
+        border: 0.1px solid #ddd
+        display: flex
+        align-items: center
+        height: 39px
+        width: 39px
+        border-radius: 50%
+        overflow: hidden
+        font-size: 11px
+        padding: 3px
+        background-image: linear-gradient(120deg, unquote("#d4fc7978")  0%, unquote("#96e6a182")  100%)
+
+    .step-description
+        font-size: 20px
+
+.active
+    .step-circle
+        color: #000000
+        border: 1px solid #ddd
+        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)
+    .step-description
+        color: #529a52
+        font-size: 25px
+
 //==============================TAB 1 CONTENT=================================================
-input
-    border: 1px solid black
+input, .mr-dropdown
+    font-style: italic
+    border: 1px solid #ccc
+    font-weight: 300
+    padding: 6px 12px
+    background-color: #ffffff
+
+.mr-dropdown
+    width: 12rem
+
 .tab-step1
     padding: 50px 0px 50px 0px
     font-size: 20px
+
     .area, .lim-title
         font-family: 'Sunflower', sans-serif
         font-size: 25px
+
     .lim-sum
+        display: flex
+        justify-content: center
+        margin-bottom: 1rem
+
         .limit
-            margin-bottom: 1rem
+            margin-right: 1rem
+
     .coverage-area, .coverage-limit
         text-align: center
+
     .coverage-limit
         border-left: 1px solid #c0c0c038
+
     .step1-button
         float: right
+
         .btn-lg
             font-size: 25px
 
@@ -61,15 +113,46 @@ input
 
 .tab-step2
     font-size: 20px
-    .trip-type
-        .title
-            font-family: 'Sunflower', sans-serif
-            font-size: 25px
 
+    .title
+        font-family: 'Sunflower', sans-serif
+        font-size: 25px
+    .trip-type
+        text-align: center
+
+        .title
+            margin: 1rem 0rem 1rem 0rem
+
+        .types
+            a
+                margin: 1rem
+            .active-type
+                padding: 5px
+                border: 1px solid #ddd
+
+    .valid-type
+
+        .title
+            margin: 1rem 0rem 1rem 0rem
+
+        #one-off-validity
+            display: none
+
+        #reusable-validity
+            display: none
+
+        .active-validity-type
+            display: block !important
+    .buttons
+        .btn-success
+            float: right
+        .bnt-warning
+            float: left
 
 
 
 .tab-step3
+
     .tourist-card
         display: flex
         justify-content: space-around
@@ -78,10 +161,19 @@ input
         font-size: 20px
         background-color: #fcfbfb
         padding-top: 1rem
-        .tourist-age
+
+        .trip-type, .tourist-age
             display: flex
-        .trip-type
-            display: flex
+            align-items: center
+                
+            .age-label, .trip-label
+                margin-right: 2rem
+
+        .trip-dropdown
+
+            .mr-dropdown
+                width: 14rem
+
         .add-tourist
             color: #459f72
 

@@ -21,9 +21,57 @@
                     <div class="col-md-12">
                         <!-- Nav tabs -->
                         <ul id="tabs" class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#step1" role="tab" data-toggle="tab">Step 1</a></li>
-                            <li role="presentation"><a href="#step2" role="tab" data-toggle="tab">Step 2</a></li>
-                            <li role="presentation"><a href="#step3" role="tab" data-toggle="tab">Step 3</a></li>
+                            <li role="presentation" class="active">
+                                <a href="#step1" role="tab" data-toggle="tab">
+                                    <div class="tab-step-title">
+                                        <div class="step-circle">
+                                            <div class="step-number">
+                                                1.
+                                            </div>
+                                            <div class="step-name">
+                                                Step
+                                            </div>
+                                        </div>
+                                        <div class="step-description">
+                                            Data entry
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#step2" role="tab" data-toggle="tab">
+                                    <div class="tab-step-title">
+                                        <div class="step-circle">
+                                            <div class="step-number">
+                                                2.
+                                            </div>
+                                            <div class="step-name">
+                                                Step
+                                            </div>
+                                        </div>
+                                        <div class="step-description">
+                                            Chose insurance policy
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#step3" role="tab" data-toggle="tab">
+                                    <div class="tab-step-title">
+                                        <div class="step-circle">
+                                            <div class="step-number">
+                                                3.
+                                            </div>
+                                            <div class="step-name">
+                                                Step
+                                            </div>
+                                        </div>
+                                        <div class="step-description">
+                                            Data confirmation
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                         
                         <div class="tab-content">
@@ -51,10 +99,20 @@
                                                 </div>
                                                 <div class="lim-sum">
                                                     <div class="limit">
-                                                        <input type="text" placeholder="1000$">
+                                                        <select class="mr-dropdown" id="limit">
+                                                            <option>100</option>
+                                                            <option>500</option>
+                                                            <option>750</option>
+                                                            <option>1000</option>
+                                                        </select>
                                                     </div>
                                                     <div class="currency">
-                                                        <input type="text" placeholder="USD">
+                                                        <select class="mr-dropdown" id="currency">
+                                                            <option>USD</option>
+                                                            <option>UAH</option>
+                                                            <option>RUB</option>
+                                                            <option>EUR</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="limit-view">
@@ -64,7 +122,7 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="step1-button">
-                                                <button class="btn btn-default btn-lg">Next</button>
+                                                <button class="btn btn-success btn-lg">Next</button>
                                             </div>
                                         </div>
                                     </div>
@@ -77,30 +135,58 @@
                                                     <span>Type of trip</span>
                                                 </div>
                                                 <div class="types">
-                                                    <input type="text">
-                                                    <input type="text">
+                                                    <a data-id="0" href="#one-off-validity" class="active-type">One-off</a>
+                                                    <a data-id="1" href="#reusable-validity" class="">Reusable</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="validity">
-                                                <div class="title">
-                                                    <span>Validity</span>
+                                            <div class="valid-type">
+
+
+                                                <div id="one-off-validity" class="active-validity-type">
+                                                    <div class="title">
+                                                        <span>Validity</span>
+                                                    </div>
+                                                    <div class="validity-period">
+                                                        <input type="text" id="datepicker" placeholder="Enter date">
+                                                        <span>-</span>
+                                                        <input type="text" id="datepicker2" placeholder="Enter date">
+                                                    </div>
+                                                    <div class="validity-period-days">
+                                                        <span>Validity (days): 0</span>
+                                                    </div>
                                                 </div>
-                                                <div class="validity-period">
-                                                    <input type="text">
-                                                    <span>-</span>
-                                                    <input type="text">
+
+
+                                                <div id="reusable-validity" class="">
+                                                    <div class="title">
+                                                        <span>Validity</span>
+                                                    </div>
+                                                    <div class="validity-period">
+                                                            <select class="mr-dropdown" id="period">
+                                                                <option>30 days</option>
+                                                                <option>90 days</option>
+                                                                <option>180 days</option>
+                                                                <option>368 days</option>
+                                                            </select>
+                                                        <span>-</span>
+                                                        <select class="mr-dropdown" id="srok">
+                                                                <option>30 days</option>
+                                                                <option>90 days</option>
+                                                                <option>180 days</option>
+                                                                <option>368 days</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
-                                                <div class="validity-period-days">
-                                                    <span>Validity (days): 0</span>
-                                                </div>
+
+
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="buttons">
                                                 <button class="btn btn-warning btn-lg">Back</button>
-                                                <button class="btn btn-default btn-lg">Next</button>
+                                                <button class="btn btn-success btn-lg">Next</button>
                                             </div>
                                         </div>
                                     </div>
@@ -121,7 +207,7 @@
                                                         </span>
                                                     </div>
                                                     <div class="age-picker">
-                                                        <input type="number">
+                                                        <input type="number" placeholder="Age">
                                                     </div>
                                                 </div>
                                                 <div class="trip-type">
@@ -130,8 +216,13 @@
                                                             Purpose of the trip
                                                         </span>
                                                     </div>
-                                                    <div class="trip-drop-down">
-                                                        <input type="text"  >
+                                                    <div class="trip-dropdown">
+                                                        <select class="mr-dropdown" id="trip-types">
+                                                                <option>some type</option>
+                                                                <option>some type</option>
+                                                                <option>some type</option>
+                                                                <option>3some type</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="add-tourist">
@@ -191,16 +282,16 @@
                                                                     </span>
                                                                 </div>
                                                             </div>
-                                                            <div class="type-value">
+                                                            <div class="type-value" id="participans">
                                                                 <div class="type">
                                                                     <span>
-                                                                        Parcipans:
+                                                                        Participans:
                                                                     </span>
                                                                 </div>
                                                                 <div class="value">
-                                                                    <span>
-                                                                    someparcipans
-                                                                    </span>
+                                                                    <span>Bob  <a href="#"><i class="far fa-times-circle"></i></a> </span>
+                                                                    <span>Fred  <a href="#"><i class="far fa-times-circle"></i></a> </span>
+                                                                    <span><a href="#"><i class="fas fa-ellipsis-h"></i></a></span>
                                                                 </div>
                                                             </div>
                                                             <div class="type-value">
@@ -210,9 +301,9 @@
                                                                     </span>
                                                                 </div>
                                                                 <div class="value">
-                                                                    <input type="text">
+                                                                    <span>00.00.00</span>
                                                                     <span>-</span>
-                                                                    <input type="text">
+                                                                    <span>00.00.00</span>
                                                                 </div>
                                                             </div>
                                                             <div class="validity">
@@ -509,6 +600,40 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script> 
+    <script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <script>
+        $(function(){
+            $("#datepicker").datepicker({
+                dateFormat: "dd-mm-yy",
+                changeMonth: true,
+                changeYear: true
+            });
+            $("#datepicker2").datepicker({
+                dateFormat: "dd-mm-yy",
+                changeMonth: true,
+                changeYear: true
+            });
+        });
+        $(".types a").click(function(e) {
+            e.preventDefault();
+
+            $('.valid-type div').removeClass('active-validity-type');
+
+            $(".types a").removeClass('active-type');
+
+            $(this).addClass('active-type');
+
+            // console.log($(this).attr('data-id'));
+
+            if($(this).attr('data-id') == 0){
+                $('.valid-type div:first-child').addClass('active-validity-type');
+            }
+            else{
+                $('.valid-type div:last-child').addClass('active-validity-type');
+            }
+        })
+    </script>
 </body>
 </html>
