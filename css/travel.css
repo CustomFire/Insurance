@@ -76,6 +76,10 @@ input {
   float: right;
 }
 
+.tab-step1 .step1-button .btn-lg {
+  font-size: 25px;
+}
+
 .tab-step2 {
   font-size: 20px;
 }
@@ -83,6 +87,28 @@ input {
 .tab-step2 .trip-type .title {
   font-family: 'Sunflower', sans-serif;
   font-size: 25px;
+}
+
+.tab-step3 .tourist-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1rem;
+  font-size: 20px;
+  background-color: #fcfbfb;
+  padding-top: 1rem;
+}
+
+.tab-step3 .tourist-card .tourist-age {
+  display: flex;
+}
+
+.tab-step3 .tourist-card .trip-type {
+  display: flex;
+}
+
+.tab-step3 .tourist-card .add-tourist {
+  color: #459f72;
 }
 
 .tab-2-title {
