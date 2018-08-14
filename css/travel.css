@@ -180,7 +180,7 @@ input, .mr-dropdown {
   float: left;
 }
 
-.tab-step3 .tourist-card {
+.tab-step3 .tourist-card, .modal-content .tourist-card {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -190,20 +190,24 @@ input, .mr-dropdown {
   padding-top: 1rem;
 }
 
-.tab-step3 .tourist-card .trip-type, .tab-step3 .tourist-card .tourist-age {
+.tab-step3 .tourist-card .tourist-name .name input, .tab-step3 .tourist-card .tourist-name .age-picker input, .tab-step3 .tourist-card .tourist-age .name input, .tab-step3 .tourist-card .tourist-age .age-picker input, .modal-content .tourist-card .tourist-name .name input, .modal-content .tourist-card .tourist-name .age-picker input, .modal-content .tourist-card .tourist-age .name input, .modal-content .tourist-card .tourist-age .age-picker input {
+  width: 12rem;
+}
+
+.tab-step3 .tourist-card .tourist-name, .tab-step3 .tourist-card .trip-type, .tab-step3 .tourist-card .tourist-age, .modal-content .tourist-card .tourist-name, .modal-content .tourist-card .trip-type, .modal-content .tourist-card .tourist-age {
   display: flex;
   align-items: center;
 }
 
-.tab-step3 .tourist-card .trip-type .age-label, .tab-step3 .tourist-card .trip-type .trip-label, .tab-step3 .tourist-card .tourist-age .age-label, .tab-step3 .tourist-card .tourist-age .trip-label {
+.tab-step3 .tourist-card .tourist-name .name-label, .tab-step3 .tourist-card .tourist-name .age-label, .tab-step3 .tourist-card .tourist-name .trip-label, .tab-step3 .tourist-card .trip-type .name-label, .tab-step3 .tourist-card .trip-type .age-label, .tab-step3 .tourist-card .trip-type .trip-label, .tab-step3 .tourist-card .tourist-age .name-label, .tab-step3 .tourist-card .tourist-age .age-label, .tab-step3 .tourist-card .tourist-age .trip-label, .modal-content .tourist-card .tourist-name .name-label, .modal-content .tourist-card .tourist-name .age-label, .modal-content .tourist-card .tourist-name .trip-label, .modal-content .tourist-card .trip-type .name-label, .modal-content .tourist-card .trip-type .age-label, .modal-content .tourist-card .trip-type .trip-label, .modal-content .tourist-card .tourist-age .name-label, .modal-content .tourist-card .tourist-age .age-label, .modal-content .tourist-card .tourist-age .trip-label {
   margin-right: 2rem;
 }
 
-.tab-step3 .tourist-card .trip-dropdown .mr-dropdown {
+.tab-step3 .tourist-card .trip-dropdown .mr-dropdown, .modal-content .tourist-card .trip-dropdown .mr-dropdown {
   width: 14rem;
 }
 
-.tab-step3 .tourist-card .add-tourist {
+.tab-step3 .tourist-card .add-tourist, .modal-content .tourist-card .add-tourist {
   color: #459f72;
 }
 
@@ -271,6 +275,10 @@ input, .mr-dropdown {
 
 .chose-sort .sort-rating .sort-buttons, .chose-sort .sort-price .sort-buttons {
   margin-left: 1rem;
+}
+
+.chose-parametrs .far, .chose-parametrs .fas {
+  color: #a7a7a7;
 }
 
 .company-card {
@@ -430,34 +438,6 @@ input, .mr-dropdown {
   font-size: 25px;
 }
 
-@media screen and (max-width: 500px) {
-  .customer-info .form-group {
-    margin-top: 1rem;
-  }
-  .checkbox {
-    text-align: center;
-  }
-  .checkbox input {
-    left: 25px;
-  }
-  .checkbox label {
-    padding-left: 50px;
-  }
-  .step3-warning-button {
-    text-align: center;
-  }
-  .order-card tbody tr th, .order-card tbody tr td {
-    padding-left: 5px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .buttons button {
-    font-size: 20px;
-    width: 45%;
-  }
-}
-
 .card {
   text-align: center;
 }
@@ -486,4 +466,244 @@ input, .mr-dropdown {
   background-color: #fbf9f9b8;
   padding-top: 30px;
   padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .modal-body .tourist-card {
+    font-size: 17px;
+  }
+  .modal-body .tourist-card .trip-label {
+    margin-right: 1rem;
+  }
+  .tab-step-title .step-description {
+    font-size: 14px;
+  }
+  .active .step-description {
+    font-size: 16px;
+  }
+  .validity-period input {
+    width: 15rem;
+  }
+  .tab-step3 .tourist-card, .modal-body .tourist-card {
+    font-size: 16px;
+  }
+  .tab-step3 .tourist-card .tourist-name .age-label, .tab-step3 .tourist-card .tourist-name .trip-label, .tab-step3 .tourist-card .trip-type .age-label, .tab-step3 .tourist-card .trip-type .trip-label, .tab-step3 .tourist-card .tourist-age .age-label, .tab-step3 .tourist-card .tourist-age .trip-label, .modal-body .tourist-card .tourist-name .age-label, .modal-body .tourist-card .tourist-name .trip-label, .modal-body .tourist-card .trip-type .age-label, .modal-body .tourist-card .trip-type .trip-label, .modal-body .tourist-card .tourist-age .age-label, .modal-body .tourist-card .tourist-age .trip-label {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .tab-step3 .tourist-card .tourist-name .name-label, .tab-step3 .tourist-card .trip-type .name-label, .tab-step3 .tourist-card .tourist-age .name-label, .modal-body .tourist-card .tourist-name .name-label, .modal-body .tourist-card .trip-type .name-label, .modal-body .tourist-card .tourist-age .name-label {
+    margin-right: 1rem;
+  }
+  .tab-step3 .tourist-card .trip-dropdown select, .modal-body .tourist-card .trip-dropdown select {
+    width: 12rem;
+  }
+  .tab-step3 .age-picker input, .modal-body .age-picker input {
+    width: 10rem;
+  }
+  .chose-parametrs .tab-2-title {
+    font-size: 17px;
+  }
+  .chose-parametrs .type-value .type {
+    font-size: 14px;
+  }
+  .chose-parametrs .type-value .value {
+    font-size: 12px;
+  }
+  .chose-parametrs .type-value .value input {
+    width: 9rem;
+  }
+  .chose-parametrs .validity .validity-period {
+    font-size: 15px;
+  }
+  .chose-parametrs .validity .period-value {
+    font-size: 15px;
+  }
+  .chose-sort .sort-title {
+    font-size: 17px;
+  }
+  .chose-sort .sort-rating, .chose-sort .sort-price {
+    font-size: 14px;
+  }
+  .company-card .company-logo-name .name {
+    width: 10rem;
+    margin-left: 1rem;
+  }
+  .company-card .company-price-buy .price-view .price {
+    font-size: 3rem;
+  }
+  .company-card .company-price-buy .buy {
+    margin-top: 1rem;
+  }
+  .company-card .company-price-buy .buy button {
+    width: 20rem;
+  }
+  .customer-info .info-title {
+    font-size: 30px;
+  }
+  .customer-info .field-section .field > input {
+    width: 22rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tab-step1 {
+    padding: 10px 0px 20px 0px;
+  }
+  .tab-step-title .step-description {
+    display: none;
+  }
+  .tab-step3 .tourist-card, .modal-body .tourist-card {
+    font-size: 20px;
+    display: block;
+    padding: 1rem;
+  }
+  .tab-step3 .tourist-card .tourist-name, .tab-step3 .tourist-card .tourist-age, .tab-step3 .tourist-card .trip-type, .modal-body .tourist-card .tourist-name, .modal-body .tourist-card .tourist-age, .modal-body .tourist-card .trip-type {
+    justify-content: space-between;
+    margin: 1rem 0 1rem 0;
+  }
+  .tab-step3 .tourist-card .tourist-name .name-label, .modal-body .tourist-card .tourist-name .name-label {
+    margin: 0;
+  }
+  .tab-step3 .tourist-card .tourist-age .age-label, .modal-body .tourist-card .tourist-age .age-label {
+    margin: 0;
+  }
+  .tab-step3 .tourist-card .trip-type .trip-label, .modal-body .tourist-card .trip-type .trip-label {
+    margin: 0;
+  }
+  .tab-step3 .tourist-card .add-tourist, .modal-body .tourist-card .add-tourist {
+    text-align: center;
+  }
+  .tab-step3 .tourist-card .add-tourist button, .modal-body .tourist-card .add-tourist button {
+    font-size: 20px;
+  }
+  .tab-step3 .tourist-card .add-tourist button .fa-user-plus:before, .modal-body .tourist-card .add-tourist button .fa-user-plus:before {
+    content: "Add tourist \f234";
+  }
+  .company-card .company-logo-name .name {
+    width: auto;
+    margin-left: 1rem;
+  }
+  .customer-info .form-group {
+    margin-top: 1rem;
+  }
+  .customer-info .field input {
+    font-size: 19px;
+  }
+  .custom-checkbox label {
+    font-size: 19px;
+  }
+  .checkbox {
+    text-align: center;
+  }
+  .checkbox input {
+    left: 25px;
+  }
+  .checkbox label {
+    padding-left: 50px;
+  }
+  .step3-warning-button {
+    text-align: center;
+  }
+  .order-card tbody tr th, .order-card tbody tr td {
+    padding-left: 5px;
+  }
+  .chose-parametrs {
+    height: 50px;
+    overflow: hidden;
+    display: block;
+    transition-duration: 1s;
+    text-align: center;
+  }
+  .chose-parametrs > div {
+    display: inline-block;
+  }
+  .chose-parametrs .tab-2-title {
+    border-radius: 6px;
+    background-color: #f3f3f3;
+    width: 100%;
+    font-size: 30px;
+  }
+  .chose-parametrs .type-value {
+    margin: 1rem 0 1rem 0;
+    width: 100%;
+  }
+  .chose-parametrs .type-value .type {
+    font-size: 25px;
+  }
+  .chose-parametrs .type-value .value {
+    font-size: 20px;
+  }
+  .chose-parametrs .validity {
+    display: block;
+  }
+  .chose-parametrs .validity .validity-period {
+    font-size: 25px;
+  }
+  .chose-parametrs .validity .period-value {
+    font-size: 20px;
+  }
+  .chose-parametrs .tab-2-title:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d7";
+    font-weight: 900;
+  }
+  .chose-parametrs:hover {
+    height: 530px;
+  }
+  .chose-parametrs:hover .tab-2-title:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d8";
+    font-weight: 900;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .validity-period input {
+    width: 14.9rem;
+  }
+  .tab-step1 .step1-button .btn-lg {
+    font-size: 20px;
+  }
+  .chose-sort {
+    justify-content: space-around;
+  }
+  .chose-sort .sort-title {
+    display: inline-block;
+    font-size: 20px;
+  }
+  .chose-sort .sort-rating, .chose-sort .sort-price {
+    display: inline-block;
+    margin-left: 5px;
+  }
+  .chose-sort .sort-rating .sort-buttons, .chose-sort .sort-price .sort-buttons {
+    margin: 0;
+  }
+  .chose-sort .sort-rating > span, .chose-sort .sort-price > span {
+    font-size: 20px;
+  }
+  .tab-pane .buttons button {
+    font-size: 16px;
+  }
+  .tab-pane .back-button button {
+    font-size: 18px;
+  }
+  .customer-info .field-section .field input {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .buttons button {
+    font-size: 20px;
+    width: 45%;
+  }
+  .validity-period input {
+    width: 12rem;
+  }
+  .customer-info .field-section .field input {
+    width: 17rem;
+  }
+  .order-card thead tr th {
+    font-size: 25px;
+  }
 }
