@@ -42,6 +42,7 @@ h2
     min-width: 200px
     border-radius: 50%
     width: 200px
+//============================================================== Motor step 1==============================================================
 
 //------------------------PAYMENT------------------------
 .payment
@@ -125,7 +126,9 @@ h2
     margin: 20px 0px 20px 0px
     font-size: 13px 
 
-//------------------------TRAVEL------------------------    
+//------------------------TRAVEL------------------------  
+//============================================================== Motor step 1==============================================================
+  
 //============================================================== Motor step 2==============================================================
 label
     margin-bottom: 0px
@@ -215,6 +218,8 @@ label
         font-family: 'Lato', sans-serif
         font-size: 20px
         height: 40px
+        font-style: italic
+        font-weight: 300
 
 .calculation-form
     select
@@ -269,6 +274,8 @@ label
 
 
 @media screen and (max-width: 500px)
+    .form-group
+        text-align: center
     .company-card
         flex-direction: column
         .company-logo-name
@@ -289,10 +296,14 @@ label
     .back-button
         float: none
         text-align: center
-//==============================================================Motor step 3==============================================================
-.step3-form
-    padding-top: 50px
-    padding-bottom: 80px
+//============================================================== Motor step 2==============================================================
+//==============================================================Motor step (3-4) ==============================================================
+.step3-form, .step4-form
+    padding:
+        top: 40px
+        bottom: 70px
+    input
+        border: 1px solid #ccc
 
 .order-card
     font-size: 20px
@@ -310,126 +321,6 @@ label
             th, td
                 padding-left: 25px
                 border: 0px
-
-.customer-info
-    .form-group
-        margin: 0
-    .field-section
-        display: flex
-        align-items: center
-        margin:
-            top: 10px
-            bottom: 10px
-        .field-name
-            display: flex
-            width: 25rem
-            label
-                font-family: 'Nunito', sans-serif
-                font-size: 19px
-                font-weight: 300
-                color: #00000085
-        .field
-            font-size: 19px
-            display: flex
-            font-style: italic
-            font-weight: 300
-            #pass-series
-                width: 9rem
-                margin-right: 1rem
-            #pass-number
-                width: 20rem
-            >input
-                width: 30rem
-                padding: 6px 12px
-            select
-                width: 9.3rem
-                margin-right: 1rem
-                &:last-child
-                    margin-right: 0rem
-
-
-
-.info-title
-    text-align: center
-    font-family: 'Sunflower', sans-serif
-    font-size: 35px
-
-.card-title
-    font-size: 20px
-
-.card-meaning
-    font-size: 20px
-
-.form-control
-    border-radius: 0px
-
-.custom-checkbox
-    label
-        font-size: 18px
-        margin-top: 1rem
-    #success
-        height: 20px
-        width: 20px
-        margin-right: 10px
-
-.back-button
-    margin-top: 2rem
-    margin-bottom: 4rem
-    button
-        font-size: 25px
-    .btn-warning
-        background-color: #689cffba
-        transition-delay: 0.1s
-        border: 0px
-        &:hover
-            background-color: #689cff
-
-.buttons
-    display: flex
-    justify-content: space-around
-    margin:
-        top: 2rem
-        bottom: 4rem
-    button
-        font-size: 25px
-
-.step3-warning-button
-    button
-        font-size: 25px
-
-
-@media screen and (max-width: 500px)
-    .customer-info
-        .form-group
-            margin-top: 1rem
-    .checkbox
-        text-align: center
-        input
-            left: 25px
-        label
-            padding-left: 50px
-
-    .step3-warning-button
-        text-align: center
-    .order-card
-        margin-bottom: 50px
-        tbody
-            tr
-                th, td
-                    padding-left: 5px
-
-@media screen and (max-width: 320px)
-    .buttons
-        button
-            font-size: 20px
-            width: 45%
-//==============================================================Motor step 4==============================================================
-.step4-form
-    padding:
-        top: 40px
-        bottom: 70px
-    input
-        border: 1px solid #ccc
 
 .contact-info
     .field-section
@@ -481,6 +372,53 @@ label
             input
                 width: 11rem
                 
+.info-title
+    text-align: center
+    font-family: 'Sunflower', sans-serif
+    font-size: 35px
+
+.card-title
+    font-size: 20px
+
+.card-meaning
+    font-size: 20px
+
+.form-control
+    border-radius: 0px
+
+.custom-checkbox
+    label
+        font-size: 18px
+        margin-top: 1rem
+    #success
+        height: 20px
+        width: 20px
+        margin-right: 10px
+
+.back-button
+    margin-top: 2rem
+    margin-bottom: 4rem
+    button
+        font-size: 25px
+    .btn-warning
+        background-color: #689cffba
+        transition-delay: 0.1s
+        border: 0px
+        &:hover
+            background-color: #689cff
+
+.buttons
+    display: flex
+    justify-content: space-around
+    margin:
+        top: 2rem
+        bottom: 4rem
+    button
+        font-size: 25px
+
+.step3-warning-button
+    button
+        font-size: 25px
 
 .step4-buttons
     margin-top: 2rem
@@ -503,16 +441,47 @@ label
         form
             padding-left: 8.5rem
 
-@media screen and (max-width: 500px)
+@media screen and (max-width: 414px)
     .contact-info
+        background-color: #fcfafa
+        margin:
+            right: -15px
+            left: -15px
+        padding:
+            top: 15px
+            bottom: 15px
+            right: 15px
+            left: 15px
+        .info-title
+            font-size: 31px
+            background-color: #fcfafa
+            margin:
+                right: -15px
+                left: -15px
         form
             padding-left: 0rem
         .field-section
             flex-direction: column
             .field-name
                 width: auto
+                label
+                    font-size: 23px
+            .field
+                input
+                    width: 38rem
+                #pass-series
+                    width: 13rem
+                #pass-number
+                    width: 23rem
         .sep-info
             text-align: center
+            background-color: #fcfafa
+            margin:
+                right: -15px
+                left: -15px
+            padding:
+                right: 15px
+                left: 15px
         .house
             #house-label
                 width: auto
@@ -521,10 +490,62 @@ label
                 padding-left: 0rem
             .field
                 input
-                    width: 11rem
+                    width: 38rem
+    .buttons
+        flex-direction: column
+        margin-bottom: 4rem
+        button:nth-child(1)
+            margin-bottom: 2rem
     .step4-buttons
         .btn-success
+            margin-top: 1rem
             margin-bottom: 3rem
+    .back-button
+        button
+            width: 100%
+
+
+
+
+@media screen and (max-width: 375px)
+    .contact-info
+        .field-section
+            .field
+                input
+                    width: 31rem
+                #pass-series
+                    width: 10rem
+                #pass-number
+                    width: 20rem
+        .house
+            .field
+                input
+                    width: 31rem
+
+
+
+
+@media screen and (max-width: 320px)
+    .contact-info
+        .field-section
+            .field-name
+                label
+                    font-size: 23px
+            .field
+                input
+                    width: 29rem
+                #pass-series
+                    width: 9rem
+                #pass-number
+                    width: 19rem
+        .sep-info
+            font-size: 25px
+        .house
+            .field
+                input
+                    width: 29rem
+
+//==============================================================Motor step 4==============================================================
 
 //==============================================================Motor modal window==============================================================
 .modal-button-succes
@@ -550,12 +571,12 @@ label
 .start-date
     text-align: center
 
+//==============================================================Motor modal window==============================================================
 
 //===========DATEPICKER===========DATEPICKER===========DATEPICKER===========DATEPICKER===========DATEPICKER
 #ui-datepicker-div
     font-size: 18px
     background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)
-    padding: 5px
     box-shadow: 2px 2px 10px #aeee91
     .ui-datepicker-header
         text-align: center
@@ -573,6 +594,7 @@ label
                 width: 45%
                 background-color: #eaf7f2
     table
+        margin: 5px
         tr
             th
                 width: 15%

@@ -71,6 +71,8 @@
   overflow: hidden;
   background-color: #fff;
   margin: 0 0 16px;
+  position: relative;
+  border: 0px;
 }
 
 .panel.panel-help a[href^="#"] {
@@ -79,10 +81,32 @@
   text-decoration: none;
 }
 
-.panel.panel-help a[href^="#"]:hover, .panel.panel-help a[href^="#"]:focus {
+.panel.panel-help a[href^="#"]:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 0px solid white;
+  border-left: 0px solid #82b21e;
+  width: 0;
+  transition: all 0.5s ease;
+}
+
+.panel.panel-help a[href^="#"]:hover, .panel.panel-help a[href^="#"]:focus, .panel.panel-help a[href^="#"]:active {
   outline: none;
   cursor: pointer;
   text-decoration: none;
+}
+
+.panel.panel-help a[href^="#"]:hover:before, .panel.panel-help a[href^="#"]:focus:before, .panel.panel-help a[href^="#"]:active:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 30px solid white;
+  border-left: 30px solid #82b21e;
+  box-shadow: -2px 2px 17px 0px rgba(0, 0, 0, 0.75);
+  width: 0;
 }
 
 .panel.panel-help .panel-heading {
@@ -105,6 +129,7 @@
 }
 
 .panel.panel-help .panel-body {
+  border: 1px solid #ddd;
   background-color: #fff;
   border-top: 1px solid #ddd;
   border-radius: 2px;

@@ -233,10 +233,14 @@ input, .mr-dropdown
     .sort-rating, .sort-price
         display: flex
         font-size: 15px
-        text-align: center
+        align-items: center
         margin-left: 3rem
         .sort-buttons
             margin-left: 1rem
+            button
+                width: 8rem
+                padding: 4px
+                font-size: 14px
 
 .chose-parametrs
     .far, .fas
@@ -585,11 +589,13 @@ input, .mr-dropdown
         .type-value
             margin: 1rem 0 1rem 0
             width: 100%
+            border-bottom: 1px solid #cccccc
             .type
                 font-size: 25px
             .value
                 font-size: 20px
         .validity
+            margin: 1rem 0 1rem 0
             display: block
             .validity-period
                 font-size: 25px
@@ -602,12 +608,26 @@ input, .mr-dropdown
                 font-weight: 900
 
         &:hover
-            height: 530px
+            height: 550px
             .tab-2-title
                 &:after
                     font-family: "Font Awesome 5 Free"
                     content: "\f0d8"
                     font-weight: 900
+        
+
+    .chose-sort
+        display: flex
+        justify-content: space-between
+        .sort-title
+            display: none
+        .sort-rating, .sort-price
+            font-size: 23px
+            margin-left: 0
+            .sort-buttons
+                button
+                    padding: 5px
+                    font-size: 15px
         
 
 
@@ -622,17 +642,17 @@ input, .mr-dropdown
                 font-size: 20px
 
     .chose-sort
-        justify-content: space-around
+        justify-content: space-between
         .sort-title
-            display: inline-block
             font-size: 20px
         .sort-rating, .sort-price
-            display: inline-block
+            display: flex
             margin-left: 5px
-            .sort-buttons
-                margin: 0
             >span
                 font-size: 20px
+            .sort-buttons
+                button
+                    width: 5rem
 
     .tab-pane
         .buttons

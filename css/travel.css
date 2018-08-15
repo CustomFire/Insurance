@@ -269,12 +269,18 @@ input, .mr-dropdown {
 .chose-sort .sort-rating, .chose-sort .sort-price {
   display: flex;
   font-size: 15px;
-  text-align: center;
+  align-items: center;
   margin-left: 3rem;
 }
 
 .chose-sort .sort-rating .sort-buttons, .chose-sort .sort-price .sort-buttons {
   margin-left: 1rem;
+}
+
+.chose-sort .sort-rating .sort-buttons button, .chose-sort .sort-price .sort-buttons button {
+  width: 8rem;
+  padding: 4px;
+  font-size: 14px;
 }
 
 .chose-parametrs .far, .chose-parametrs .fas {
@@ -626,6 +632,7 @@ input, .mr-dropdown {
   .chose-parametrs .type-value {
     margin: 1rem 0 1rem 0;
     width: 100%;
+    border-bottom: 1px solid #cccccc;
   }
   .chose-parametrs .type-value .type {
     font-size: 25px;
@@ -634,6 +641,7 @@ input, .mr-dropdown {
     font-size: 20px;
   }
   .chose-parametrs .validity {
+    margin: 1rem 0 1rem 0;
     display: block;
   }
   .chose-parametrs .validity .validity-period {
@@ -648,12 +656,27 @@ input, .mr-dropdown {
     font-weight: 900;
   }
   .chose-parametrs:hover {
-    height: 530px;
+    height: 550px;
   }
   .chose-parametrs:hover .tab-2-title:after {
     font-family: "Font Awesome 5 Free";
     content: "\f0d8";
     font-weight: 900;
+  }
+  .chose-sort {
+    display: flex;
+    justify-content: space-between;
+  }
+  .chose-sort .sort-title {
+    display: none;
+  }
+  .chose-sort .sort-rating, .chose-sort .sort-price {
+    font-size: 23px;
+    margin-left: 0;
+  }
+  .chose-sort .sort-rating .sort-buttons button, .chose-sort .sort-price .sort-buttons button {
+    padding: 5px;
+    font-size: 15px;
   }
 }
 
@@ -665,21 +688,20 @@ input, .mr-dropdown {
     font-size: 20px;
   }
   .chose-sort {
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .chose-sort .sort-title {
-    display: inline-block;
     font-size: 20px;
   }
   .chose-sort .sort-rating, .chose-sort .sort-price {
-    display: inline-block;
+    display: flex;
     margin-left: 5px;
-  }
-  .chose-sort .sort-rating .sort-buttons, .chose-sort .sort-price .sort-buttons {
-    margin: 0;
   }
   .chose-sort .sort-rating > span, .chose-sort .sort-price > span {
     font-size: 20px;
+  }
+  .chose-sort .sort-rating .sort-buttons button, .chose-sort .sort-price .sort-buttons button {
+    width: 5rem;
   }
   .tab-pane .buttons button {
     font-size: 16px;

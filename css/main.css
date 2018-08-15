@@ -1,8 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
-@import url("https://fonts.googleapis.com/css?family=Anton|Bree+Serif|Faster+One|Lato|Nunito|Slabo+27px|Spinnaker");
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,800);
-@import url("https://fonts.googleapis.com/css?family=Sunflower:300");
-@import url(https://fonts.googleapis.com/css?family=Lato:300,700);
+@import url("https://fonts.googleapis.com/css?family=Lato|Nunito|Sunflower:300");
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 * {
   font-family: 'Lato', sans-serif;
@@ -757,12 +753,19 @@ html {
 }
 
 .footer-form .form-group .form-control {
-  height: 30px;
+  height: 40px;
   font-size: 20px;
+  font-style: italic;
+  font-weight: 100;
+  padding: 6px 12px;
 }
 
 .footer-form .form-group .text-box {
   height: 120px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 100;
+  padding: 6px 12px;
 }
 
 .footer-copyright {

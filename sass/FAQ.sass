@@ -59,14 +59,34 @@
   overflow: hidden
   background-color: #fff
   margin: 0 0 16px
+  position: relative
+  border: 0px
   a[href^="#"]
     outline: none
     cursor: pointer
     text-decoration: none
-    &:hover, &:focus
+    &:before 
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        border-top: 0px solid white
+        border-left: 0px solid #82b21e
+        width: 0
+        transition: all 0.5s ease
+    &:hover, &:focus, &:active
       outline: none
       cursor: pointer
       text-decoration: none
+      &:before 
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        border-top: 30px solid white
+        border-left: 30px solid #82b21e
+        box-shadow: -2px 2px 17px 0px rgba(0, 0, 0, 0.75)
+        width: 0
   .panel-heading
     padding: 0 16px
     line-height: 48px
@@ -83,6 +103,7 @@
       letter-spacing: 0
       text-transform: none
   .panel-body
+    border: 1px solid #ddd
     background-color: #fff
     border-top: 1px solid #ddd
     border-radius: 2px

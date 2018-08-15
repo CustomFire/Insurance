@@ -239,6 +239,8 @@ label {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   height: 40px;
+  font-style: italic;
+  font-weight: 300;
 }
 
 .calculation-form select {
@@ -304,6 +306,9 @@ label {
 }
 
 @media screen and (max-width: 500px) {
+  .form-group {
+    text-align: center;
+  }
   .company-card {
     flex-direction: column;
   }
@@ -328,9 +333,13 @@ label {
   }
 }
 
-.step3-form {
-  padding-top: 50px;
-  padding-bottom: 80px;
+.step3-form, .step4-form {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+.step3-form input, .step4-form input {
+  border: 1px solid #ccc;
 }
 
 .order-card {
@@ -352,162 +361,6 @@ label {
 .order-card tbody tr th, .order-card tbody tr td {
   padding-left: 25px;
   border: 0px;
-}
-
-.customer-info .form-group {
-  margin: 0;
-}
-
-.customer-info .field-section {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.customer-info .field-section .field-name {
-  display: flex;
-  width: 25rem;
-}
-
-.customer-info .field-section .field-name label {
-  font-family: 'Nunito', sans-serif;
-  font-size: 19px;
-  font-weight: 300;
-  color: #00000085;
-}
-
-.customer-info .field-section .field {
-  font-size: 19px;
-  display: flex;
-  font-style: italic;
-  font-weight: 300;
-}
-
-.customer-info .field-section .field #pass-series {
-  width: 9rem;
-  margin-right: 1rem;
-}
-
-.customer-info .field-section .field #pass-number {
-  width: 20rem;
-}
-
-.customer-info .field-section .field > input {
-  width: 30rem;
-  padding: 6px 12px;
-}
-
-.customer-info .field-section .field select {
-  width: 9.3rem;
-  margin-right: 1rem;
-}
-
-.customer-info .field-section .field select:last-child {
-  margin-right: 0rem;
-}
-
-.info-title {
-  text-align: center;
-  font-family: 'Sunflower', sans-serif;
-  font-size: 35px;
-}
-
-.card-title {
-  font-size: 20px;
-}
-
-.card-meaning {
-  font-size: 20px;
-}
-
-.form-control {
-  border-radius: 0px;
-}
-
-.custom-checkbox label {
-  font-size: 18px;
-  margin-top: 1rem;
-}
-
-.custom-checkbox #success {
-  height: 20px;
-  width: 20px;
-  margin-right: 10px;
-}
-
-.back-button {
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-}
-
-.back-button button {
-  font-size: 25px;
-}
-
-.back-button .btn-warning {
-  background-color: #689cffba;
-  transition-delay: 0.1s;
-  border: 0px;
-}
-
-.back-button .btn-warning:hover {
-  background-color: #689cff;
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-}
-
-.buttons button {
-  font-size: 25px;
-}
-
-.step3-warning-button button {
-  font-size: 25px;
-}
-
-@media screen and (max-width: 500px) {
-  .customer-info .form-group {
-    margin-top: 1rem;
-  }
-  .checkbox {
-    text-align: center;
-  }
-  .checkbox input {
-    left: 25px;
-  }
-  .checkbox label {
-    padding-left: 50px;
-  }
-  .step3-warning-button {
-    text-align: center;
-  }
-  .order-card {
-    margin-bottom: 50px;
-  }
-  .order-card tbody tr th, .order-card tbody tr td {
-    padding-left: 5px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .buttons button {
-    font-size: 20px;
-    width: 45%;
-  }
-}
-
-.step4-form {
-  padding-top: 40px;
-  padding-bottom: 70px;
-}
-
-.step4-form input {
-  border: 1px solid #ccc;
 }
 
 .contact-info .field-section {
@@ -581,6 +434,69 @@ label {
   width: 11rem;
 }
 
+.info-title {
+  text-align: center;
+  font-family: 'Sunflower', sans-serif;
+  font-size: 35px;
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+.card-meaning {
+  font-size: 20px;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+.custom-checkbox label {
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+.custom-checkbox #success {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.back-button {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.back-button button {
+  font-size: 25px;
+}
+
+.back-button .btn-warning {
+  background-color: #689cffba;
+  transition-delay: 0.1s;
+  border: 0px;
+}
+
+.back-button .btn-warning:hover {
+  background-color: #689cff;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.buttons button {
+  font-size: 25px;
+}
+
+.step3-warning-button button {
+  font-size: 25px;
+}
+
 .step4-buttons {
   margin-top: 2rem;
   text-align: center;
@@ -608,7 +524,22 @@ label {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 414px) {
+  .contact-info {
+    background-color: #fcfafa;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .contact-info .info-title {
+    font-size: 31px;
+    background-color: #fcfafa;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
   .contact-info form {
     padding-left: 0rem;
   }
@@ -618,8 +549,25 @@ label {
   .contact-info .field-section .field-name {
     width: auto;
   }
+  .contact-info .field-section .field-name label {
+    font-size: 23px;
+  }
+  .contact-info .field-section .field input {
+    width: 38rem;
+  }
+  .contact-info .field-section .field #pass-series {
+    width: 13rem;
+  }
+  .contact-info .field-section .field #pass-number {
+    width: 23rem;
+  }
   .contact-info .sep-info {
     text-align: center;
+    background-color: #fcfafa;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .contact-info .house #house-label {
     width: auto;
@@ -629,10 +577,57 @@ label {
     padding-left: 0rem;
   }
   .contact-info .house .field input {
-    width: 11rem;
+    width: 38rem;
+  }
+  .buttons {
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+  .buttons button:nth-child(1) {
+    margin-bottom: 2rem;
   }
   .step4-buttons .btn-success {
+    margin-top: 1rem;
     margin-bottom: 3rem;
+  }
+  .back-button button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contact-info .field-section .field input {
+    width: 31rem;
+  }
+  .contact-info .field-section .field #pass-series {
+    width: 10rem;
+  }
+  .contact-info .field-section .field #pass-number {
+    width: 20rem;
+  }
+  .contact-info .house .field input {
+    width: 31rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contact-info .field-section .field-name label {
+    font-size: 23px;
+  }
+  .contact-info .field-section .field input {
+    width: 29rem;
+  }
+  .contact-info .field-section .field #pass-series {
+    width: 9rem;
+  }
+  .contact-info .field-section .field #pass-number {
+    width: 19rem;
+  }
+  .contact-info .sep-info {
+    font-size: 25px;
+  }
+  .contact-info .house .field input {
+    width: 29rem;
   }
 }
 
@@ -672,7 +667,6 @@ label {
 #ui-datepicker-div {
   font-size: 18px;
   background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-  padding: 5px;
   box-shadow: 2px 2px 10px #aeee91;
 }
 
@@ -697,6 +691,10 @@ label {
   font-style: italic;
   width: 45%;
   background-color: #eaf7f2;
+}
+
+#ui-datepicker-div table {
+  margin: 5px;
 }
 
 #ui-datepicker-div table tr th {
