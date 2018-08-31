@@ -146,16 +146,27 @@ nav.active .menu-link {
 }
 
 .navbar-brand {
-  background-image: url(../logo.png);
-  width: 90px;
-  background-position: center;
-  background-size: cover;
+  padding: 0;
+}
+
+.navbar-brand img {
+  width: auto;
+  height: 100%;
 }
 
 .navbar {
   background-color: #d6f58e;
   border-radius: 0px;
   margin-bottom: 0px;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.navbar-collapse .navbar-nav {
+  float: none;
+  display: inline-block;
 }
 
 .navbar-default .navbar-nav > li > a {

@@ -130,15 +130,22 @@ nav.active .menu-link
 .navbar
   display: block
 .navbar-brand
-    background-image: url(../logo.png)
-    width: 90px
-    background-position: center
-    background-size: cover
+  padding: 0
+  img
+    width: auto
+    height: 100%
 .navbar
     background-color: $navbar-color
     border-radius: 0px
     margin:
       bottom: 0px
+
+.navbar-collapse
+  text-align: center
+
+  .navbar-nav
+    float: none
+    display: inline-block
 
 .navbar-default .navbar-nav>li>a
     color: $links-color
