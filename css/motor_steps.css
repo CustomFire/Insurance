@@ -499,7 +499,10 @@ label {
 
 .step4-buttons {
   margin-top: 2rem;
-  text-align: center;
+}
+
+.step4-buttons .row .col-xs-12:nth-child(1) {
+  text-align: right;
 }
 
 .step4-buttons button {

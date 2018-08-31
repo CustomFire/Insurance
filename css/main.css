@@ -164,7 +164,7 @@ nav.active .menu-link {
   text-align: center;
 }
 
-.navbar-collapse .navbar-nav {
+.navbar-nav {
   float: none;
   display: inline-block;
 }
@@ -191,6 +191,10 @@ nav.active .menu-link {
 
 .dropdown-menu li {
   width: 50px;
+}
+
+.navbar > .container-fluid .navbar-brand {
+  margin-left: -10px;
 }
 
 .choose-section {
