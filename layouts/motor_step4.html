@@ -182,16 +182,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="start-date">
-                                            <div class="form-group">
-                                                <label>Select the start date of the insurance policy</label>
-                                                <br>
-                                                <select id="dayDropDown" name="dayDropDown">
-                                                </select>
-                                                <select id="monthDropDown" name="monthDropDown">
-                                                </select>
-                                                <select id="yearDropDown" name="yearDropDown">
-                                                </select>
-                                            </div>
+                                            <input type="text" id="datepicker3" placeholder="Enter date">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
@@ -203,7 +194,7 @@
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-6">
                                                 <div class="modal-button-succes">
-                                                    <button class="btn btn-success btn-lg">Back to filling data</button>                                            
+                                                    <button class="btn btn-success btn-lg">Registered insurance policy</button>                                            
                                                 </div>
                                             </div>
                                         </div>
@@ -392,6 +383,11 @@
                 changeYear: true
             });
             $("#datepicker2").datepicker({
+                dateFormat: "dd-mm-yy",
+                changeMonth: true,
+                changeYear: true
+            });
+            $("#datepicker3").datepicker({
                 dateFormat: "dd-mm-yy",
                 changeMonth: true,
                 changeYear: true
